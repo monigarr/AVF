@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    
+    <!--
+    Full Sail University
+    AVF
+    Monica Peters
+	Week 21
+	Due Thursday June 28th 2012
+    
+    additem.html
+    
+    Goals: 
+    	Launch Page (HTML/CSS/JS) to showcase work from AVF.
+    	Provide link to Launch Page via GH-Pages and Github Repo.
+    	Embed Video showing each week's discussions:
+    				show both Android Emulator & iOS device
+    	Link to current, working, local storage or remote storage CRUD app from ASD.
+    	Verify CRUD app works correctly.
+    
+    Use:  Portfolio Manager for Web Developers that want
+          to show off their work from their mobile devices during 
+          job interviews, client consultations, and similar meetings.
+          
+	Benefit:	localStorage so internet connection is not required.
+				client locations with crappy or zero internet service
+				can still view portfolio and inspiration.
+    -->
+    
+<html lang="en">
+	<head>
+		<title>AVF Demo</title>
+		<meta type="charset" content = "utf-8" />
+		<meta type="robots" content="index,follow" />
+		<meta type="description" content="Manage your personal media library" />
+		<meta type="keywords" content = "media library, add media, monica peters, vfw" />
+		
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.01/jquery.mobile-1.1.0.min.css" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/modernizr.custom.min.js"></script>
+		
+		<!--Video Support-->
+		<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+		<script src="http://vjs.zencdn.net/c/video.js"></script>
+		
+		<!-- Monica's custom style sheet-->
+		<!-- call custom style sheets last when using jqmobile -->
+		<link rel="stylesheet" href="css/styles.css" />
+	
+	</head>
+	<body>
+	
+	<div data-role="page" id="home" data-theme="d" data-add-back-btn="true">
+		<div data-role="header">
+			<h1><a href="#home">AVF Demo</a></h1>
+		</div><!--/header-->
+		<div data-role="content">	
+			<a href="http://videojs.com/#section5">HTML5 JS Video Plugin</a>
+			<video controls
+				id="my_video_1" 
+				class="video-js vjs-default-skin"
+				preload="auto" 
+				width="640" 
+				height="264" 
+				poster="my_video_poster.png"
+			  data-setup="{}">
+			  <source src="my_video.mp4" type="video/mp4" />
+			  <source src="my_video.webm" type='video/webm; codecs="vp8, vorbis"' />
+			</video>
+		</div><!--/content-->
+		<div data-role="footer" data-position="fixed">
+copyright Monica Peters 2012. All Rights Reserved.
+		</div><!--/footer-->
+	</div><!--/page /home-->
+
+	
+	<!--jquery and jquery mobile-->
+	<!--note that order of js is important below-->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	
+	<!--plugins-->
+	<script src="js/libs/jquery.validate.min.js"></script>
+
+	<!--custom js-->	
+	<script type="text/javascript" src="js/json.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		//Load JSON DATA
+		$('#jsondata').bind('click', function(){
+			$('#data').empty();
+			$('<h3>').html('JSON Data Loaded').appendTo('#data');
+			$.ajax({
+				url: 'xhr/data.json',
+				type: 'GET',
+				dataType: 'json',
+				success: function(answer){
+					for (var i=0, j=answer.item.length; i<j; i++){
+						var jdata = answer.item[i];
+						$(''+
+							'<li>'+ 
+								jdata.name +'<br />'+
+								jdata.comments +'<br /><br />'+
+							'</li>'
+						).appendTo('#data');
+						console.log(answer);
+					}
+				}
+			});
+			return false;
+		});
+	});
+	</script>	
+
+	</body>
+</html>
