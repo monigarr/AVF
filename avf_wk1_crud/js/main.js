@@ -6,6 +6,7 @@
 //    Week 4 Project 4
 //    Due Thursday Feb. 23rd 2012
 //    main.js
+//    javascript lint: warning function validate & function togglecontrols does not always return value
 
 // Wait until DOM is ready
 window.addEventListener("DOMContentLoaded", function()
