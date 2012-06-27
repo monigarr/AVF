@@ -10,6 +10,7 @@
 // Add Test Data 
 // One object for each file type
 // book, document, music,  movie, pdf, word doc, audio, video
+// javascript lint passed June 27th 2012
 
 var json = 
 {

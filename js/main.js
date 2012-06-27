@@ -10,7 +10,6 @@
 //			http://javascriptlint.com/online_lint.php
 //			June 26th 2012 passed
 
-	
 $(document).ready(function()
 {
 	//HOME PAGE
