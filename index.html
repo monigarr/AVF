@@ -52,9 +52,7 @@
 		<!-- Monica's custom style sheet-->
 		<!-- call custom style sheets last when using jqmobile -->
 		<link rel="stylesheet" href="css/styles.css" />
-		<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-		
-		<script src="http://vjs.zencdn.net/c/video.js"></script>
+
 	</head>
 	
 	<body>
@@ -154,16 +152,11 @@
 					<ul data-role="listview" data-inline="true" data-theme="f">
 						<li data-role="collapsible">
 							<h3>Week 1: Launch Page & PhoneGap Setup. Android & iPad Demo.</h3>
-								<video id="avf_week1" class="video-js vjs-default-skin" controls
-								  preload="auto" 
-								  width="640" 
-								  height="264" 
-								  poster="images/show_off_app_a.png"
-								  data-setup="{}">
-								  <source src="https://www.dropbox.com/s/lst5igmhkwlmxwa/avf_wk1_phonegap.mp4" type="video/mp4">
-								  <source src="https://www.dropbox.com/s/ewt6lhfhmnof348/avf_wk1.webm" type="video/webm">
-								  <source src="https://www.dropbox.com/s/djf7xf5tuyd2fqh/avf_wk1_phonegap.theora.ogv" type="video/ogg">
-								  <source src="https://www.dropbox.com/s/ewt6lhfhmnof348/avf_wk1_phonegap.m4v" type="video/m4v">
+															
+								<video id="avfWeek1Video" width="640" height="360" preload controls>
+									<source src="https://www.dropbox.com/s/djf7xf5tuyd2fqh/avf_wk1.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+									<source src="https://www.dropbox.com/s/djf7xf5tuyd2fqh/avf_wk1_phonegap.theora.ogv" type='video/ogg; codecs="theora, vorbis"' />
+									<source src="https://www.dropbox.com/s/ewt6lhfhmnof348/avf_wk1.webm" type='video/webm; codecs="vp8, vorbis"' />
 								</video>
 						</li>
 						<li data-role="collapsible">
