@@ -17,6 +17,12 @@ $(document).ready(function()
 	{console.log("Home Page Loaded");}); //end contact pageinit
 
 	//ADD FOOTER
+	$('#header').empty();
+	$(function()
+	{$('#header').append('<center><h1>AVF Launch Page</h1></center>');});
+	console.log("Header Loaded");
+	
+	//ADD FOOTER
 	$('#footer').empty();
 	$(function()
 	{$('#footer').append('<small>copyright Monica Peters 2012. All Rights Reserved.</small>');});

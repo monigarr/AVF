@@ -136,3 +136,101 @@ button#submit {
 .ui-icon-showoff-delete {
 	background-image: url("delete.png");	
 }
+
+/* LISTS */
+
+.list-divider{
+	background: url("../images/gun_metal.png") repeat scroll left top #333333;
+    color: #3399FF;
+    text-shadow: none;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0.5em 25px;
+}
+
+section ul li span:hover{
+	background: #999;
+}
+
+section ul{
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 0.6em;
+    padding: 0;
+    background: #FFFFFF;
+    margin: 0 0 1em 0;
+}
+section ul li{
+	border-top: 1px solid #efefef;
+    color: #444444;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+    display: block;
+    padding: .6em 8px .6em 25px;
+}
+section ul li a{
+	display: block;
+	color: #333333;
+	text-decoration: none;
+}
+section ul li span{
+	background: none repeat scroll 0 0 #555;
+    border-radius: 1.6em 1.6em 1.6em 1.6em;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 26px;
+    margin-right: 5px;
+    text-align: center;
+    text-shadow: none;
+    width: 25px;
+}
+
+@media all and (min-width: 650px){	
+	.left_side {
+		float: left;
+		width: 45%;
+		margin: 30px 0 20px 2%;
+		padding: 0 4% 0 0;
+	}
+	.right_side {
+		width: 45%;
+		float: right;
+		margin-top: 30px;
+		padding-right: 1%;
+	}
+	.right_side ul:first-child {
+		margin-top: 0;
+	}
+
+
+}
+@media all and (min-width: 750px){
+
+	.left_side {
+		width: 45%;
+	}
+	.right_side {
+		width: 45%;
+		padding-right: 1%;
+	}	
+
+}
+
+@media all and (min-width: 1200px){
+
+	.left_side {
+		width: 45%;
+		padding-left:3%;
+		margin: 30px 0 20px 0;
+	}
+	.right_side {
+		width: 45%;
+		padding-right: 3%;
+	}
+
+}

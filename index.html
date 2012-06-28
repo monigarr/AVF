@@ -57,29 +57,13 @@
 	
 	<body>
 	<div data-role="page" id="home" data-theme="d" data-add-back-btn="true">
-		<div data-role="header" id="header"><a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a><center><h1>AVF Launch Page</h1></center></div><!--/header-->
-		<div data-role="content">	
-						<h2>DEVELOPER INFO</h2>
-					<div class="ui-grid-a">
-						<div class="ui-block-a">
-						<p>
-						<img src="images/Monica_Peters.jpg" width="130" height="124" border="0" align="left" padding="33px" />
-								<address>
-									Monica Peters<br>
-									AVF0612<br>
-									Full Sail University<br>
-									Advanced Visual Frameworks<br>
-									admin@SeawayWebSite.com<br>
-									<a href="http://www.MonicaLamb.com/blog3">MonicaLamb.com</a>
-								</address>
-							</p>
-						</div>
-						<div class="ui-block-b"></div>
-					</div><!--/ui-grid-c-->
-			<br />
-				<h2>CRUD APPS</h2>
-				<hr>
-				<div class="ui-grid-c">
+		<div data-role="header" id="header"></div><!--/header-->
+		<div data-role="content">
+		
+			<section class="left_side">	
+			
+			<ul>
+					<li class="list-divider">CRUD APP</li>
 <!--
 					<div class="ui-block-a"><img src="images/showoff_75x75.png" width="75" height="75" border="0" align="left" /><br />
 						MIU<br>
@@ -91,93 +75,66 @@
 						<a href="http://github.com/monigarr/mdv-projects/tree/master/ASD">github</a><br>
 					</div>
 -->
-					<div class="ui-block-c"><img src="images/showoff_75x75.png" width="75" height="75" border="0" align="left" /><br />
-						Media Library<br><!--avf week 1-->
-						<a href="https://github.com/monigarr/AVF">github</a><br>
+					<li>
+						<img src="images/showoff_75x75.png" width="75" height="75" border="0" align="left" />
+						<a href="https://github.com/monigarr/AVF">github</a><br />
 						<a href="http://monigarr.github.com/AVF/avf_wk1_crud/index.html">gh-pages</a>
-					</div>
-				</div><!--/ui-grid-c-->
-				<br />
-				<p>
-				<h2>NATIVE FEATURE DEMOS</h2>
-				<hr>
-					<div class="ui-grid-c">
-						<div class="ui-block-a"><div id="#alignImg"><img src="images/ios_64.png" width="64" height="64" border="0" /><br />Notifications<br /></div></div>
-						<div class="ui-block-b"><div id="#alignImg"><img src="images/ios_64.png" width="64" height="64" border="0" /><br />Geolocation<br /></div></div>
-						<div class="ui-block-c"><div id="#alignImg"><img src="images/ios_64.png" width="64" height="64" border="0" /><br />Acclerometer<br /></div></div>
-						<div class="ui-block-d"><div id="#alignImg"><img src="images/ios_64.png" width="64" height="64" border="0" /><br />Media<br /></div></div>
-					</div><!--/ui-grid-c-->
-					<div class="ui-grid-a">
-						<div class="ui-block-a"><div id="#alignImg"><img src="images/android_trans.png" width="64" height="64" border="0" /><br />Camera<br /></div></div>
-						<div class="ui-block-b"><div id="#alignImg"><img src="images/android_trans.png" width="64" height="64" border="0" /><br />Storage<br /></div></div>
-						</div><!--/ui-grid-a-->
-				</p>
-				<br />
-				<p>
-				<h2>RESEARCH</h2>
-				<hr>
-					<ul data-role="listview" data-theme="f">
+					</li>
+			</ul>
+			
+				<ul>
+					<li class="list-divider">NATIVE FEATURE DEMOS</li>
+					<li><div id="ios_android"></div>Notifications</li>
+					<li><div id="ios_android"></div>Geolocation</li>
+					<li><div id="ios_android"></div>Acclerometer</li>
+					<li><div id="ios"></div>Media</li>
+					<li><div id="ios"></div>Camera</li>
+					<li><div id="ios">Storage</div></li>
+				</ul>
+			</section><!--left_side-->
+			
+			<section class="right_side">
+				<ul>
+					<li class="list-divider">RESEARCH</li>
+					<li><a href="#discuss_week_1" data-rel="dialog">Industry Research & Project Intent</a></li>
+					<li>Week Two Discussion</li>
+					<li>Week Three Discussion</li>
+					<li>Week Four Discussion</li>
+				</ul>
+				
+				<ul>
+					<li class="list-divider">REFLECTION VIDEOS</li>
 						<li>
-							<div data-role="collapsible">
-								<h3>Industry Research & Project Intent</h3>
-								<p>
-									<a href="#discuss_week_1" data-rel="dialog">What I plan to Develop for ASD</a>
-								</p>
-							</div>
+							<a href="video.html">Research & Project Intent</a>
 						</li>
 						<li>
-							<div data-role="collapsible">
-								<h3>Week Two Discussion</h3>
-								<p>questions / answers</p>
-							</div>
+							Week Two Topic
 						</li>
 						<li>
-							<div data-role="collapsible">
-								<h3>Week Three Discussion</h3>
-								<p>questions / answers</p>
-							</div>
+							Week Three Topic
 						</li>
 						<li>
-							<div data-role="collapsible">
-								<h3>Week Four Discussion</h3>
-								<p>questions / answers</p>
-							</div>
-						</li>
-				</div><!--/collapsible /research-->
-				</p>
-				<br />				
-				<section id="videos">
-					<h2>REFLECTION VIDEOS</h2>
-					<hr>
-					<ul data-role="listview" data-inline="true" data-theme="f">
-						<li data-role="collapsible">
-							<h3>Week 1: Launch Page & PhoneGap Setup. Android & iPad Demo.</h3>
-															
-								<video id="avfWeek1Video" width="640" height="360" poster="images/avf_week1.png" preload controls>
-									<source src="https://www.dropbox.com/s/djf7xf5tuyd2fqh/avf_wk1.mov" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-									<source src="https://www.dropbox.com/s/djf7xf5tuyd2fqh/avf_wk1_phonegap.theora.ogv" type='video/ogg; codecs="theora, vorbis"' />
-									<source src="https://www.dropbox.com/s/ewt6lhfhmnof348/avf_wk1.webm" type='video/webm; codecs="vp8, vorbis"' />
-								</video>
-						</li>
-						<li data-role="collapsible">
-							<h3>Week Two Topic</h3>
-							embed webm and mp4
-						</li>
-						<li data-role="collapsible">
-							<h3>Week Three Topic</h3>
-							embed webm and mp4
-						</li>
-						<li data-role="collapsible">
-							<h3>Week Four Topic</h3>
-							embed webm and mp4
+							Week Four Topic
 						</li>
 					</ul>
-				</section><!--/videos-->
-				<br />
-				<div id="grass">
+					
+				<ul>
+					<li class="list-divider">DEVELOPER INFO</li>
+					<li><img src="images/Monica_Peters.jpg" width="130" height="124" border="0" align="left" padding="33px" /></li>
+					<li>
+						Monica Peters<br>
+						AVF0612<br>
+						Full Sail University<br>
+						Advanced Visual Frameworks<br>
+						admin@SeawayWebSite.com<br>
+						<a href="http://www.MonicaLamb.com/blog3">MonicaLamb.com</a>
+					</li>
+				</ul>
 				
-				</div>
+				</section><!--/right_side-->
+
 		</div><!--/content-->
+		
 		<div data-role="footer" id="footer" data-position="fixed"></div><!--/footer-->
 	</div><!--/page /home-->
 	
@@ -222,7 +179,8 @@
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	
 	<!--plugins-->
-	
+	<script src="http://html5.kaltura.org/js"></script>
+
 	<!--custom js-->	
 	<script type="text/javascript" src="js/main.js"></script>
 
