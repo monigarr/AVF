@@ -63,18 +63,12 @@
 			<h1><a href="#home">AVF Demo</a></h1>
 		</div><!--/header-->
 		<div data-role="content">	
-			<a href="http://videojs.com/#section5">HTML5 JS Video Plugin</a>
-			<video controls
-				id="my_video_1" 
-				class="video-js vjs-default-skin"
-				preload="auto" 
-				width="640" 
-				height="264" 
-				poster="my_video_poster.png"
-			  data-setup="{}">
-			  <source src="my_video.mp4" type="video/mp4" />
-			  <source src="my_video.webm" type='video/webm; codecs="vp8, vorbis"' />
-			</video>
+			<video id="avfWeek1Video" width="640" height="360" poster="images/avf_week1.png" preload controls>
+									<source src="https://docs.google.com/open?id=0B4ZuZ4ZK_5lvMW50Z1drZ2RXbE0" type='video/mp4' />
+									<source src="https://docs.google.com/open?id=0B4ZuZ4ZK_5lvOHJuVVYwc0JWakk" type='video/mp4' />
+									<source src="https://www.dropbox.com/s/djf7xf5tuyd2fqh/avf_wk1_phonegap.theora.ogv" type='video/ogg' />
+									<source src="https://docs.google.com/open?id=0B4ZuZ4ZK_5lvTktUeU4yeDBBOFE" type='video/webm' />
+								</video>
 		</div><!--/content-->
 		<div data-role="footer" data-position="fixed">
 copyright Monica Peters 2012. All Rights Reserved.
@@ -91,36 +85,7 @@ copyright Monica Peters 2012. All Rights Reserved.
 	<script src="js/libs/jquery.validate.min.js"></script>
 
 	<!--custom js-->	
-	<script type="text/javascript" src="js/json.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function()
-	{
-		//Load JSON DATA
-		$('#jsondata').bind('click', function(){
-			$('#data').empty();
-			$('<h3>').html('JSON Data Loaded').appendTo('#data');
-			$.ajax({
-				url: 'xhr/data.json',
-				type: 'GET',
-				dataType: 'json',
-				success: function(answer){
-					for (var i=0, j=answer.item.length; i<j; i++){
-						var jdata = answer.item[i];
-						$(''+
-							'<li>'+ 
-								jdata.name +'<br />'+
-								jdata.comments +'<br /><br />'+
-							'</li>'
-						).appendTo('#data');
-						console.log(answer);
-					}
-				}
-			});
-			return false;
-		});
-	});
-	</script>	
 
 	</body>
 </html>
