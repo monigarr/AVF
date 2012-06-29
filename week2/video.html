@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    
+    <!--
+    Full Sail University
+    AVF
+    Monica Peters
+	Week 21
+	Due Thursday June 28th 2012
+    
+    additem.html
+    
+    Goals: 
+    	Launch Page (HTML/CSS/JS) to showcase work from AVF.
+    	Provide link to Launch Page via GH-Pages and Github Repo.
+    	Embed Video showing each week's discussions:
+    				show both Android Emulator & iOS device
+    	Link to current, working, local storage or remote storage CRUD app from ASD.
+    	Verify CRUD app works correctly.
+    
+    Use:  Portfolio Manager for Web Developers that want
+          to show off their work from their mobile devices during 
+          job interviews, client consultations, and similar meetings.
+          
+	Benefit:	localStorage so internet connection is not required.
+				client locations with crappy or zero internet service
+				can still view portfolio and inspiration.
+    -->
+    
+<html lang="en">
+	<head>
+		<title>AVF Demo</title>
+		<meta type="charset" content = "utf-8" />
+		<meta type="robots" content="index,follow" />
+		<meta type="description" content="Manage your personal media library" />
+		<meta type="keywords" content = "media library, add media, monica peters, vfw" />
+		
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.01/jquery.mobile-1.1.0.min.css" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/modernizr.custom.min.js"></script>
+		
+		<!--Video Support-->
+		<link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+		<script src="http://vjs.zencdn.net/c/video.js"></script>
+		
+		<!-- Monica's custom style sheet-->
+		<!-- call custom style sheets last when using jqmobile -->
+		<link rel="stylesheet" href="css/styles.css" />
+	
+	</head>
+	<body>
+	
+	<div data-role="page" id="home" data-theme="d" data-add-back-btn="true">
+		<div data-role="header">
+			<h1><a href="index.html">AVF Demo</a></h1>
+		</div><!--/header-->
+		<div data-role="content">	
+			<video id="avfWeek1Video" width="640" height="360" poster="images/avf_week1.png" preload controls>
+				<source src="http://www.monicalamb.com/video/avf_wk1_phonegap.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				<source src="http://www.monicalamb.com/video/avf_wk1_phonegap.m4v" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+				<source src="http://www.monicalamb.com/video/avf_wk1.webm" ype='video/webm; codecs="vp8, vorbis"' />
+				<source src="http://www.monicalamb.com/video/avf_wk1_phonegap.theora.ogv" type='video/ogg; codecs="theora, vorbis"' />
+			</video>
+		</div><!--/content-->
+		<div data-role="footer" data-position="fixed">
+copyright Monica Peters 2012. All Rights Reserved.
+		</div><!--/footer-->
+	</div><!--/page /home-->
+
+	
+	<!--jquery and jquery mobile-->
+	<!--note that order of js is important below-->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	
+	<!--plugins-->
+	<script src="js/libs/jquery.validate.min.js"></script>
+
+	<!--custom js-->	
+	<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
