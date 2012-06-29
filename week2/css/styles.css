@@ -1,0 +1,303 @@
+/*
+    Full Sail University
+    Advanced Visual Frameworks
+    Monica Peters
+    Week 1
+    Due Thursday June 28th 2012
+    styles.css
+*/
+
+/*
+	project type icons are 35 x 35
+	project screenshots are 75 x 75
+	Vertical Stack Design Concept
+	with JQuery Mobile
+*/
+
+/* accordian http://designmodo.com/jquery-accordion-menu/
+*/
+
+body {
+	background-image: url("../images/grid_bg.png");
+}
+
+#header .ui-header .ui-bar-a {
+	background: url("../images/gun_metal.png") repeat scroll left top #333333;
+	text-shadow: none;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0.5em 25px;
+}
+
+h1 {
+	background: url("../images/gun_metal.png") repeat scroll left top #333333;
+	color: #FFFFCC;
+	text-shadow: none;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    font-size: 29px;
+    font-weight: bold;
+    padding: 0.5em 25px;
+    margin: 0px;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+#alignImg {
+	align: left;
+	valign: top;
+}
+
+.projectImage {
+	height: 75px; 
+	width: 75px; 
+	background: url(../images/showoff_75x75.png) no-repeat center left;
+	text-align: left;
+}
+
+#githubImage {
+	height: 64px; 
+	width: 64px; 
+	background: url(../images/github64x64.png) no-repeat top left;
+}
+
+.android48Image {
+	height: 48px; 
+	width: 48px; 
+	background: url(../images/android_circle_48x48.png) no-repeat top left;
+	margin: 3px;
+}
+
+.ios48Image {
+	height: 48px; 
+	width: 48px; 
+	background: url(../images/iphone48x48.png) no-repeat top left;
+	padding: 0px;
+	margin: 3px;
+}
+
+#androidios{
+	height: 32px; 
+	width: 64px; 
+	background: url(../images/ios_android32x64.png) no-repeat top left;
+}
+
+#list_divider_title {
+	font-size: 20px;
+	color: #3399FF;
+	text-align: left;
+}
+h2#list_divider {
+	position: inherit;
+	text-align: left;
+}
+
+
+div#crud_apps {
+	text-align: center;
+	width: 800px;
+}
+
+/* start tutorial */
+	#page-wrap{
+		padding-top:20px;
+		padding-left:20px;
+		}
+		h1{
+			margin-bottom:10px;
+		}
+		.items a,.items a:active,.items a:link,.items a:visited{
+		font-size:1.2em;
+			color:#3300CC;
+			text-decoration:underline;
+			display:block;
+			margin-top:10px;
+		}
+		.items a:hover{
+			text-decoration:none;	
+		}
+		.brief{
+			font-size:0.8em;
+			padding-left:10px;
+		}
+		.long{
+			font-size:0.8em;
+			padding-left:10px;
+		}
+
+/* stop tutorial */
+label.error{
+	/*default is inline*/
+	display: block;
+	margin: 10px 0;
+	color: #ff6600;
+}
+
+li {
+	list-style-type: none;
+	margin: 3px 0;
+}
+
+button#submit {
+	display: inline;
+	text-align: left;
+	width: 55px;
+	height: 25px;
+	margin: 3px 3px 3px 3px;
+}
+
+/*a#clear {
+	display: inline;
+	text-align: center;
+	font-size: 17px;
+	font-variant: small-caps;
+	font-weight: bold;
+	width: 100%;
+	color: #ff9933;
+	margin: 13px 13px 13px 13px;
+}
+*/
+
+.ui-body {
+	background-image: url("../images/grid_bg.png");
+	font-family: Verdana, Trebuchet, Arial;
+}
+
+.ui-page {
+	background-image: url("../images/grid_bg.png");
+}
+
+.ui-icon-showoff-home {
+	background-image: url("home.png");
+}
+
+.ui-icon-showoff-info {
+	background-image: url("info.png");	
+}
+
+.ui-icon-showoff-add {
+	background-image: url("add.png");	
+}
+
+.ui-icon-showoff-search {
+	background-image: url("search.png");	
+}
+
+.ui-icon-showoff-browse {
+	background-image: url("browse.png");	
+}
+
+.ui-icon-showoff-news {
+	background-image: url("news.png");	
+}
+
+.ui-icon-showoff-edit {
+	background-image: url("edit.png");	
+}
+
+.ui-icon-showoff-delete {
+	background-image: url("delete.png");	
+}
+
+/* LISTS */
+
+.list-divider{
+	background: url("../images/gun_metal.png") repeat scroll left top #333333;
+    color: #3399FF;
+    text-shadow: none;
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0.5em 25px;
+}
+
+section ul li span:hover{
+	background: #999;
+}
+
+section ul{
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+	border-radius: 0.6em;
+    padding: 0;
+    background: #FFFFFF;
+    margin: 0 0 1em 0;
+}
+section ul li{
+	border-top: 1px solid #efefef;
+    color: #444444;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #FFFFFF;
+    display: block;
+    padding: .6em 8px .6em 25px;
+}
+section ul li a{
+	display: block;
+	color: #333333;
+	text-decoration: none;
+}
+section ul li span{
+	background: none repeat scroll 0 0 #555;
+    border-radius: 1.6em 1.6em 1.6em 1.6em;
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    line-height: 26px;
+    margin-right: 5px;
+    text-align: center;
+    text-shadow: none;
+    width: 25px;
+}
+
+@media all and (min-width: 650px){	
+	.left_side {
+		float: left;
+		width: 45%;
+		margin: 30px 0 20px 2%;
+		padding: 0 4% 0 0;
+	}
+	.right_side {
+		width: 45%;
+		float: right;
+		margin-top: 30px;
+		padding-right: 1%;
+	}
+	.right_side ul:first-child {
+		margin-top: 0;
+	}
+
+
+}
+@media all and (min-width: 750px){
+
+	.left_side {
+		width: 45%;
+	}
+	.right_side {
+		width: 45%;
+		padding-right: 1%;
+	}	
+
+}
+
+@media all and (min-width: 1200px){
+
+	.left_side {
+		width: 45%;
+		padding-left:3%;
+		margin: 30px 0 20px 0;
+	}
+	.right_side {
+		width: 45%;
+		padding-right: 3%;
+	}
+
+}
+
