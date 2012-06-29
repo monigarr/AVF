@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Phonegap_testActivity!</string>
+    <string name="app_name">Phonegap_test</string>
+
+</resources>
