@@ -28,9 +28,9 @@ function showPosition(position)
     lon=position.coords.longitude;
     latlon=new google.maps.LatLng(lat, lon)
     maparea=document.getElementById('maparea')
-    mapharea.style.height='250px';
+    maparea.style.height='250px';
     maparea.style.width='100%';
-    console.log("showPosition is coming through");
+    console.log("showPosition is coming through. Yay :)");
     
     var myOptions={
     center:latlon,zoom:12,
