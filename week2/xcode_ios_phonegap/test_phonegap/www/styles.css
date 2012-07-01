@@ -1,0 +1,201 @@
+/*
+    Full Sail University
+    Visual Frameworks
+    Monica Peters
+    AVF Week 2
+  Advanced Visual Frameworks
+    Due Thursday July 14th 2012
+    styles.css
+*/
+
+/* tag .class #id */
+
+
+/* add multiple browser support */
+article, aside, figure, footer, header, hgroup, nav, section {
+	display:block;
+}
+
+body { 
+	font-family: normal 14px/20px Verdana, Arial, Helvetica, san-serif;
+	background: url('grid_bg.png');
+    background-color: #ef8dbb;
+    color: #141414;
+	width: 98%;
+	margin: auto;
+	padding: 10px;
+	overflow: scroll;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+} 
+
+/*LAYOUT*/
+
+section { 
+	display: block;
+} 
+
+header { 
+
+} 
+
+nav { 
+	display: block;
+}
+
+.big_text {
+    font-size: 15px;
+    color: #000000;
+}
+
+.big_text_divider {
+    background: url(swirl.png);
+}
+
+footer { 
+	display: block;
+	margin-top: 45px;
+} 
+
+article { 
+	display: inline;
+} 
+
+/*LINKS*/
+
+a { 
+	outline: none;
+	text-decoration: none;
+	color: navy;
+} 
+
+/*pseudoclass*/
+a:hover {
+	outline: 1px dotted blue;
+	text-decoration: underline;
+}
+
+
+/*TYPOGRAPHY*/
+
+h1 { 
+	/* Parisienne imported from google fonts http://www.google.com/webfonts */
+	font-family: Parisienne;
+	font-size: 42px;
+	margin: 0px;
+	padding: 5px;
+	width: 95%;
+	display: ;
+	overflow: ;
+	visibility: ;
+	word-wrap: ;
+	text-align: center;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+} 
+
+p { 
+	color: #000000;
+	/*font-style: italic;
+	/*font-family: Verdana, Arial, Helvetica;
+	/*font-weight: normal;
+	/*line-height: 1.2em;
+	/*style, variant, weight, size/line-height, font-family*/
+	font: italic small-caps normal 12px/1.2em Verdana;
+	letter-spacing: .02em;
+	text-align: center;
+	/* negative to left. positive to right*/
+	/*text-indent: -600px;*/
+	text-transform: lowercase;
+} 
+
+.push {
+	height: 50px; 
+}
+
+/*GEOLOCATION*/
+#maparea{
+	margin-top: 33px;
+    margin-bottom: 33px;
+    margin-right: 13px;
+    margin-left: 13px;
+}
+
+/*FORMS*/
+
+
+legend { 
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+} 
+
+/* rounded box */
+fieldset { 
+	display: block;
+	text-decoration: none;
+	border: 5px double;
+	color: #000000;
+	background-color: rgba(0,0,0,0.3);
+	text-align: left;
+	font-size: 14px;
+	margin: 5px 5px 9px 5px;
+	padding: 15px 0;
+	position: relative;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 100px;
+	-webkit-box-shadow: 2px 2px 0 0 rgba(72,72,72,1);
+	-moz-box-shadow: 2px 2px 0 0 rgba(72,72,72,1);
+	box-shadow: 2px 2px 0 0 rgba(72,72,72,1);
+} 
+
+label { 
+	display: inline;
+	/*border: 1px solid blue;*/
+} 
+
+input[type=submit] { 
+	color: #990033;
+	background-color: #ffffcc;
+	-moz-border-radius: 35%;
+	border-radius: 35%;
+	text-align: left;
+} 
+
+/*LISTS*/
+
+div#items ul li {
+	background:#ef8dbb;
+	color:#141414;
+	width: 100%;
+	font-family: Helvetica;
+	display: block;
+	width: auto;
+	margin: auto;
+	padding: 5px;
+	font-weight: normal;
+	line-height: 1.2em;
+	text-transform: lowercase;
+	text-align: left;
+	background-color: ##ef8dbb;
+	color:#141414;
+}
+
+#errors { 
+	color: #000000;
+	background-color: red;
+	text-decoration: none;
+	display: block;
+} 
+
+ul {
+	
+}
+
+li { 
+	display: block;
+	background: ;
+	
+} 
