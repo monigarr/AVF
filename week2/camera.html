@@ -29,26 +29,23 @@
 	</head>
 	
   	<body onload="onBodyLoad()">
-	  	<div data-role="header" id="header"></div><!--/header-->
+	<div data-role="header" id="header"><a href="index.html" data-iconpos="notext" data-icon="home">Home</a>Camera Demo</div><!--/header-->
 	  	<div data-role="content">
 			<div role="main" id="secondary_content" >
-			
-			<!--MAIN ATTRACTION-->
-			<button onclick="capturePhoto();">Capture Photo</button>
-			<button onclick="capturePhotoEdit();">Capture Editable Photo</button> 
-	    <!--
-		<button onclick="try{getPhoto(pictureSource.PHOTOLIBRARY);}catch(err){alert(err);};">From Photo Library</button>
-	    <button onclick="try{getPhoto(pictureSource.SAVEDPHOTOALBUM);}catch(err){alert(err);};">From Photo Album</button>-->
-	    <img height=200 width=200 id="myImage" align="left"/>
-        
-        <div id="phoneGapReady" class="phoneGapReady"></div>
-		      
-		      </div><!--/main /secondary_content-->
+                
+                <!--MAIN ATTRACTION-->
+                <button onclick="capturePhoto();">Capture Photo</button>
+                <button onclick="capturePhotoEdit();">Capture Editable Photo</button> 
+                <img height="200" width="200" id="myImage" align="left"/>
+                
+                <div id="phoneGapReady" class="phoneGapReady"></div>
+                
+            </div><!--/main /secondary_content-->
 			<div class="push"></div>
-			</div><!--/content-->
-
+        </div><!--/content-->
+        
 		<div data-role="footer" id="footer"><small>Monica Peters : AVF0612 : Camera Demo.</small></div>
-	</div><!--/page-->
+        </div><!--/page-->
 
 	
 	<!--jquery and jquery mobile-->

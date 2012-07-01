@@ -1,10 +1,15 @@
-var imageSource; // image source
-var destinationType; // sets format of returned value
+//http://docs.phonegap.com/en/1.0.0/phonegap_camera_camera.md.html#Camera
 
+//image source
+var imageSource;
+
+//set format of returned value
+var destinationType;
 
 function onBodyLoad()
 {
     document.addEventListener("deviceready",onDeviceReady,false);
+    console.log('deviceready');
 }
 
 /* PhoneGap is initialized */
@@ -18,7 +23,7 @@ function onDeviceReady()
 
 // Call when Image successfully received
 function onPhotoDataSuccess(imageData) {
-
+    
     // Get image handle
     var myImage = document.getElementById('myImage');
     
