@@ -35,7 +35,9 @@ function onError() {
 	ax=0,
 	ay=0;
 	var sphere=document.getElementById("sphere");
-	if(window.DeviceMotionEvent!=undefined){window.ondevicemotion=function(e)
+	if(window.DeviceMotionEvent!=undefined)
+	{
+		window.ondevicemotion=function(e)
 	{
 		ax=event.accelerationIncludingGravity.x*5;
 		ay=event.accelerationIncludingGravity.y*5;
