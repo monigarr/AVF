@@ -1,21 +1,32 @@
+<!-- 
+    Monica Peters
+    Full Sail University
+    AVF Advanced Visual Frameworks
+    Monica Peters
+	Week 2
+	Due Thursday July 12th 2012
+	
+	HTML Lint Test
+	passed July 1st 2012
+-->
 <!DOCTYPE html>
 <html>
 	<head>
 	  	<title>Monica Peters Camera Demo</title>
 
-		<meta type="charset" content = "utf-8" />
+		<meta type="charset" content="utf-8" />
 		<meta type="robots" content="index,follow" />
 		<meta type="description" content="Manage your personal media library" />
-		<meta type="keywords" content = "media library, add media, monica peters, vfw" />
+		<meta type="keywords" content="media library, add media, monica peters, vfw" />
 		
 		
 		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
-		<meta name="HandheldFriendly" content="True">
-		<meta name="MobileOptimized" content="320"/>
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
 		
 		<!-- Mobile IE needs ClearType for smoothing fonts -->
-		<meta http-equiv="cleartype" content="on">
+		<meta http-equiv="cleartype" content="on" />
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 		
 		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
@@ -29,6 +40,7 @@
 	</head>
 	
   	<body onload="onBodyLoad()">
+  	<div data-role="page" id="camera">
 	<div data-role="header" id="header"><a href="index.html" data-iconpos="notext" data-icon="home">Home</a>Camera Demo</div><!--/header-->
 	  	<div data-role="content">
 			<div role="main" id="secondary_content" >
