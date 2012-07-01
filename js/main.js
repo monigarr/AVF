@@ -25,7 +25,7 @@ $(document).ready(function()
 	//ADD FOOTER
 	$('#footer').empty();
 	$(function()
-	{$('#footer').append('<small>copyright Monica Peters 2012. All Rights Reserved.</small>');});
+	{$('#footer').append('<small>Monica Peters : AVF0612 : Advanced Visual Frameworks</small>');});
 	console.log("Footer Loaded");
 
 	
