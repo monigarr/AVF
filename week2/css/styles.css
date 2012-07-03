@@ -195,6 +195,12 @@ ul.polaroid a {
 
 /* stop camera */
 
+/* VIDEO */
+div#center {
+	text-align: center;
+}
+/* stop video */
+
 /* FORMS */
 div#take_picture {
 	text-align: center;
