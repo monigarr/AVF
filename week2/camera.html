@@ -6,8 +6,9 @@
 	Week 2
 	Due Thursday July 12th 2012
 	
-	HTML Lint Test
-	passed July 1st 2012
+	HTML Lint:
+		http://lint.brihten.com/html/#results
+		passed July 3rd 2012
 -->
 <!DOCTYPE html>
 <html>
@@ -41,22 +42,32 @@
 	
   	<body onload="onBodyLoad()">
   	<div data-role="page" id="camera">
-	<div data-role="header" id="header"><a href="index.html" data-iconpos="notext" data-icon="home">Home</a>Camera Demo</div><!--/header-->
+	<div data-role="header" id="header"></div><!--/header-->
 	  	<div data-role="content">
+	  		<h2> Camera Demo</h2>
 			<div role="main" id="secondary_content" >
                 
                 <!--MAIN ATTRACTION-->
-                <button onclick="capturePhoto();">Capture Photo</button>
-                <button onclick="capturePhotoEdit();">Capture Editable Photo</button> 
-                <img height="200" width="200" id="myImage" align="left"/>
-                
-                <div id="phoneGapReady" class="phoneGapReady"></div>
-                
-            </div><!--/main /secondary_content-->
+                <div class="left_side">
+	                <ul class="polaroid">
+	                <!--http://www.zurb.com/playground/css3-polaroids-->
+	                	<li>
+		                	<a href="#" title="Camera Snapshot">
+		                		<img height="200" width="200" id="myImage" align="left" valign="center" alt="Camera Snapshot"  />
+		                	</a>
+	                	</li>
+	                </ul><!--/polaroid-->
+                </div><!--/left_side-->
+            
+             <div class="right_side">
+            	    <button onclick="captureImage();">Take a Picture</button>
+	                <div id="phoneGapReady" class="phoneGapReady"></div>
 			<div class="push"></div>
+             </div><!--/right_side-->
+             </div><!--/secondary_content-->            
         </div><!--/content-->
         
-		<div data-role="footer" id="footer"><small>Monica Peters : AVF0612 : Camera Demo.</small></div>
+		<div data-role="footer" id="footer"></div>
         </div><!--/page-->
 
 	
@@ -66,7 +77,6 @@
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	
 	<!--plugins-->
-	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="js/accelerometer.js"></script>
 	
 	<!--custom js-->	

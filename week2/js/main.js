@@ -19,7 +19,7 @@ $(document).ready(function()
 	//ADD FOOTER
 	$('#header').empty();
 	$(function()
-	{$('#header').append('<center><h1>AVF Launch Page Wk 2</h1></center>');});
+	{$('#header').append('<center><h1><a href="index.html">AVF Launch Page Wk 2</a></h1></center>');});
 	console.log("Header Loaded");
 	
 	//ADD FOOTER

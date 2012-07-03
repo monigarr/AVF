@@ -100,7 +100,7 @@
 		51D141B8159F81A4000868A6 /* geolocation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = geolocation.html; path = www/geolocation.html; sourceTree = "<group>"; };
 		51D141BA159F81C1000868A6 /* video.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = video.html; path = www/video.html; sourceTree = "<group>"; };
 		51D141D0159F9080000868A6 /* phonegap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = phonegap.js; path = www/phonegap.js; sourceTree = "<group>"; };
-		51D141D2159F91F9000868A6 /* modernizr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = modernizr.js; sourceTree = "<group>"; };
+		51D141D2159F91F9000868A6 /* modernizr.js */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; fileEncoding = 4; path = modernizr.js; sourceTree = "<group>"; };
 		51D141D4159F924E000868A6 /* accelerometer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = accelerometer.js; path = www/accelerometer.js; sourceTree = "<group>"; };
 		51D141D6159F925F000868A6 /* camera.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = camera.js; path = www/camera.js; sourceTree = "<group>"; };
 		51D141D8159F926D000868A6 /* geolocation.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = geolocation.js; path = www/geolocation.js; sourceTree = "<group>"; };

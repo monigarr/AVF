@@ -17,6 +17,7 @@
 /* accordian http://designmodo.com/jquery-accordion-menu/
 */
 
+/* PAGE LAYOUT */
 body {
 	background-image: url("../images/grid_bg.png");
 }
@@ -46,6 +47,52 @@ h1 {
 a:link {
 	text-decoration: none;
 }
+
+@media all and (min-width: 650px){	
+	.left_side {
+		float: left;
+		width: 45%;
+		margin: 30px 0 20px 2%;
+		padding: 0 4% 0 0;
+	}
+	.right_side {
+		width: 45%;
+		float: right;
+		margin-top: 30px;
+		padding-right: 1%;
+	}
+	.right_side ul:first-child {
+		margin-top: 0;
+	}
+
+
+}
+@media all and (min-width: 750px){
+	.left_side {
+		width: 45%;
+	}
+	.right_side {
+		width: 45%;
+		padding-right: 1%;
+	}	
+}
+
+@media all and (min-width: 1200px){
+	.left_side {
+		width: 45%;
+		padding-left:3%;
+		margin: 30px 0 20px 0;
+	}
+	.right_side {
+		width: 45%;
+		padding-right: 3%;
+	}
+}
+
+/* stop page layout */
+
+
+/* IMAGES */
 
 #alignImg {
 	align: left;
@@ -86,21 +133,12 @@ a:link {
 	background: url(../images/ios_android32x64.png) no-repeat top left;
 }
 
-#list_divider_title {
-	font-size: 20px;
-	color: #3399FF;
-	text-align: left;
-}
-h2#list_divider {
-	position: inherit;
-	text-align: left;
-}
-
 
 div#crud_apps {
 	text-align: center;
 	width: 800px;
 }
+/* stop images */
 
 /* ACCELEROMETER */
 #sphere {
@@ -112,34 +150,7 @@ div#crud_apps {
 	background-color:#00ff00;
 }
 
-/* start tutorial */
-	#page-wrap{
-		padding-top:20px;
-		padding-left:20px;
-		}
-		h1{
-			margin-bottom:10px;
-		}
-		.items a,.items a:active,.items a:link,.items a:visited{
-		font-size:1.2em;
-			color:#3300CC;
-			text-decoration:underline;
-			display:block;
-			margin-top:10px;
-		}
-		.items a:hover{
-			text-decoration:none;	
-		}
-		.brief{
-			font-size:0.8em;
-			padding-left:10px;
-		}
-		.long{
-			font-size:0.8em;
-			padding-left:10px;
-		}
 
-/* stop tutorial */
 label.error{
 	/*default is inline*/
 	display: block;
@@ -147,31 +158,58 @@ label.error{
 	color: #ff6600;
 }
 
-li {
-	list-style-type: none;
-	margin: 3px 0;
+/* stop accelerometer */
+
+/* CAMERA */
+
+/* tilt image -2 degrees */
+ul.polaroid a:after {
+	content: attr(title);
+}
+
+ul.polaroid a {
+	-webkit-transform: rotate(-2deg);
+	-moz-transform: rotate(-2deg);
+}
+
+/* Scale the images on hover, add transitions for smoothing things out, and ensure the hover appears on top */
+ul.polaroid a:hover {
+	-webkit-transform: scale(1.25);
+	-moz-transform: scale(1.25);
+	position: relative;
+	z-index: 5;
+}
+
+/* Add drop shadows and smooth out the transition (Safari only) */
+ul.polaroid a {
+-webkit-transition: -webkit-transform .15s linear;
+-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+ 
+/* On hover, darken the shadows a bit */
+ul.polaroid a {
+-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
+}
+
+/* stop camera */
+
+/* FORMS */
+div#take_picture {
+	text-align: center;
 }
 
 button#submit {
 	display: inline;
 	text-align: left;
-	width: 55px;
-	height: 25px;
+	width: 15%;
 	margin: 3px 3px 3px 3px;
 }
 
-/*a#clear {
-	display: inline;
-	text-align: center;
-	font-size: 17px;
-	font-variant: small-caps;
-	font-weight: bold;
-	width: 100%;
-	color: #ff9933;
-	margin: 13px 13px 13px 13px;
-}
-*/
+/* stop forms */
 
+/* CUSTOM JQM */
 .ui-body {
 	background-image: url("../images/grid_bg.png");
 	font-family: Verdana, Trebuchet, Arial;
@@ -213,7 +251,18 @@ button#submit {
 	background-image: url("delete.png");	
 }
 
+/* stop custom jqm */
+
 /* LISTS */
+#list_divider_title {
+	font-size: 20px;
+	color: #3399FF;
+	text-align: left;
+}
+h2#list_divider {
+	position: inherit;
+	text-align: left;
+}
 
 .list-divider{
 	background: url("../images/gun_metal.png") repeat scroll left top #333333;
@@ -266,48 +315,10 @@ section ul li span{
     width: 25px;
 }
 
-@media all and (min-width: 650px){	
-	.left_side {
-		float: left;
-		width: 45%;
-		margin: 30px 0 20px 2%;
-		padding: 0 4% 0 0;
-	}
-	.right_side {
-		width: 45%;
-		float: right;
-		margin-top: 30px;
-		padding-right: 1%;
-	}
-	.right_side ul:first-child {
-		margin-top: 0;
-	}
-
-
-}
-@media all and (min-width: 750px){
-
-	.left_side {
-		width: 45%;
-	}
-	.right_side {
-		width: 45%;
-		padding-right: 1%;
-	}	
-
+li {
+	list-style-type: none;
+	margin: 3px 0;
 }
 
-@media all and (min-width: 1200px){
-
-	.left_side {
-		width: 45%;
-		padding-left:3%;
-		margin: 30px 0 20px 0;
-	}
-	.right_side {
-		width: 45%;
-		padding-right: 3%;
-	}
-
-}
+/* stop lists */
 
