@@ -6,8 +6,9 @@
 	Week 2
 	Due Thursday July 12th 2012
 	
-		HTML Lint Test
-		passed July 1st 2012
+	HTML Lint:
+		http://lint.brihten.com/html/#results
+		passed July 3rd 2012
 -->
 
 <!DOCTYPE html>
@@ -42,17 +43,18 @@
 	
   	<body onload="onBodyLoad()">
   		<div data-role="page" id="geolocation">
-	  	<div data-role="header" id="header"><a href="index.html" data-iconpos="notext" data-icon="home">Home</a>Geolocation Demo</div><!--/header-->
+	  	<div data-role="header" id="header"></div><!--/header-->
 	  	<div data-role="content">
 			<div role="main" id="secondary_content" > 
-                <h2>Geolocation Demo</h2>
-                    <p id="geolocationDemo">HTML5 Geolocation to find your location.</p>
-                    <button onclick="getLocation()">Show My Location</button>
-                    <div id="maparea"></div>             
-            </div><!--/main /secondary_content-->
-			<div class="push"></div>
+		      <h2>Geolocation Demo</h1>
+		      <p class="intro" id="demo">Find your location with HTML5 Geolocation and Google Maps API. </p>
+		      <button onclick="getLocation()">Your Location</button>
+		      <div id="mapholder"></div>  
+	      </div><!--/secondary_content-->
+		<div class="push"></div>			
+
         </div><!--/content-->
-		<div data-role="footer" id="footer"><small>Monica Peters : AVF0612 : Geolocation Demo.</small></div>
+		<div data-role="footer" id="footer"></div>
         </div><!--/page-->
 
 	
@@ -62,7 +64,7 @@
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	
 	<!--plugins-->
-	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=weather&sensor=false"></script>
 	<script type="text/javascript" src="js/geolocation.js"></script>
 	
 	<!--custom js-->	
