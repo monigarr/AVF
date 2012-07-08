@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+    
+    <!--
+    Monica Peters
+    Full Sail University
+    AVF Advanced Visual Frameworks
+    Monica Peters
+	Week 2
+	Due Thursday July 12th 2012
+	
+	HTML Lint:
+		http://lint.brihten.com/html/#results
+		passed June 26th 2012
+		passed July 3rd 2012
+
+    
+    Goals Week 1: 
+    	Launch Page (HTML/CSS/JS) to showcase work from AVF.
+    	Provide link to Launch Page via GH-Pages and Github Repo.
+    	Embed Video showing each week's discussions:
+    				show both Android Emulator & iOS device
+    	Link to current, working, local storage or remote storage CRUD app from ASD.
+    	Verify CRUD app works correctly.
+    	
+    Goals Week 2:
+    	Same as Week 1 Plus
+    	Two Native Features (Geolocation, Accelerometer, Alert).
+    		work in both iOS Device and Android
+    	Native Features Styled Nice & Clever Implementation.
+    	Research Topic & Video Added.
+    
+    Use:  
+    	Show off the mobile apps I create  during 
+    	client consultations, job interviews, and similar meetings.
+          
+	Benefit:	
+		Easy, clean access to show the work I did in my classes at Full Sail University.
+    -->
+    
+<html lang="en">
+	<head>
+		<title>AVF Launch Page Week 3</title>
+		<meta type="charset" content = "utf-8" />
+		<meta type="robots" content="index,follow" />
+		<meta type="description" content="Manage your personal media library" />
+		<meta type="keywords" content = "media library, add media, monica peters, vfw" />
+		
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/modernizr.custom.min.js"></script>
+		
+		<!-- Monica's custom style sheet-->
+		<!-- call custom style sheets last when using jqmobile -->
+		<link rel="stylesheet" href="css/styles.css" />
+
+	</head>
+	
+	<body>
+	<div data-role="page" id="home" data-theme="d" data-add-back-btn="true">
+		<div data-role="header" id="header"></div><!--/header-->
+		<div data-role="content">
+			<section id="weekly_nav">
+				<center>
+				<a href="http://monigarr.github.com/AVF/index.html" data-rel="external" data-ajax="false">Home</a> | 
+				<a href="http://monigarr.github.com/AVF/week1/index.html" data-rel="external" data-ajax="false">Week 1</a> |
+				<a href="http://monigarr.github.com/AVF/week2/index.html" data-rel="external" data-ajax="false">Week 2</a> |				
+				Week 3 |			
+				<a href="http://monigarr.github.com/AVF/week4/index.html" data-rel="external" data-ajax="false">Week 4</a>
+				</center>
+			</section><!--/weekly_nav-->
+			<section class="left_side">				
+				<ul>
+					<li class="list-divider">
+						<img src="images/ios_android32x64.png" width="64px" height="32px" border="0">
+						NATIVE FEATURES
+					</li>
+					<li><a href="accelerometer.html" data-rel="external">Acclerometer</a></li>
+					<li><a href="camera.html" data-rel="external">Camera</a></li>
+					<!-- <li><a href="capture.html" data-rel="external">Image Audio Video Capture</a></li> -->
+					<li><a href="geolocation.html" data-rel="external">Geolocation</a></li>
+					<!--
+					<li><a href="media.html" data-rel="external">Media</a></li>
+ 					<li><a href="network_test.html" data-rel="external">Network Connection</a></li> 
+					<li><a href="notification.html" data-rel="external">Notification: Alert, Beep, Vibrate</a></li>
+					-->
+				</ul>
+			
+			<ul>
+					<li class="list-divider">
+						<img src="images/ios_64.png" width="64px" height="64px" border="0">
+						NATIVE FEATURES
+					</li>
+					<!-- <li><a href="compass.html" data-rel="external">Compass</a></li> -->
+					<li><a href="contacts.html" data-rel="external">Contacts</a></li>
+					<!--
+					<li><a href="device.html" data-rel="external">Device Info</a></li>
+					<li>Events</li>
+					<li><a href="file.html" data-rel="external">File</a></li>
+					<li><a href="alert.html" data-rel="external">Notification: Alert</a></li>
+					<li><a href="storage.html" data-rel="external">Storage: local, DB</a></li>
+-->
+			</ul>
+			
+			<ul>
+					<li class="list-divider">
+						<img src="images/android_trans.png" width="64px" height="64px" border="0">						
+						NATIVE FEATURES
+					</li>
+					<li></li>
+			</ul>
+
+			</section><!--left_side-->
+						
+			<section class="right_side">
+			
+			<ul>
+					<!--FIGURE INFO http://html5doctor.com/your-questions-15/-->
+					<li class="list-divider"><div id="githubImage"></div>CRUD APP</li>
+					<li>
+						old crud: <a href="https://github.com/monigarr/AVF/tree/master/week3/avf_wk1_crud/index.html">github</a> 
+						<a href="http://monigarr.github.com/AVF/week3/avf_wk1_crud/index.html" data-rel="external" data-ajax="false">gh-pages</a><br /><br />
+						avf: <a href="https://github.com/monigarr/AVF">github</a>
+						<a href="http://monigarr.github.com/AVF/index.html" data-rel="external" data-ajax="false">gh-pages</a>
+					</li>
+			</ul>
+			
+				<ul>
+					<li class="list-divider">RESEARCH</li>
+					<li><a href="#research_intent" data-rel="dialog">Industry Research & Project Intent</a></li>
+					<li><a href="#accessibility" data-rel="dialog">Accessibility</a></li>
+					<li><a href="#market_research" data-rel="dialog">Market Research</a></li>
+					<li>Final Project</li>
+				</ul>
+				
+				<ul>
+					<li class="list-divider">REFLECTION VIDEOS</li>
+						<li>
+							<a href="video_avf_launch_page.html" data-rel="dialog" transition="pop">Launch Page</a>
+						</li>
+						<li>
+							<a href="video_accessibility.html" data-rel="dialog" transition="pop">Geolocation, Accelerometer (iOS & Android)</a>
+						</li>
+						<li>
+							<a href="video_wk3.html" data-rel="dialog" transition="pop">Camera, Contacts (iOS & Android)
+						</li>
+						<li>
+							Final Project
+						</li>
+					</ul>
+				
+				
+				<ul>
+					<li class="list-divider">DEVELOPER INFO</li>
+					<li><img src="images/Monica_Peters.jpg" width="130" height="124" border="0" align="left" padding="33px" /></li>
+					<li>
+						Monica Peters<br>
+						AVF0612<br>
+						Full Sail University<br>
+						Advanced Visual Frameworks<br>
+						admin@SeawayWebSite.com<br>
+						<a href="http://www.MonicaLamb.com/blog3">MonicaLamb.com</a>
+					</li>
+				</ul>
+				
+				</section><!--/right_side-->
+
+		</div><!--/content-->
+		
+		<div data-role="footer" id="footer" data-position="fixed"></div><!--/footer-->
+	</div><!--/page /home-->
+	
+
+	<div data-role="page" id="research_intent">
+		<div data-role="header" id="header"><a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a><center><h1>AVF Launch Page</h1></center></div>
+		<div data-role="content" id="content">
+			<h2>Research: Industry & Project Intent</h2>
+			<p>
+			<h3>What types of native features (on Android and iOS devices) would you be able to implement with the use of HTML/CSS/JS only?</h3>
+			According to the PhoneGap chart I can access the iOS and Android Accelerometer, Camera, Contacts, File, GeoLocation, Media, Network and Notification (sound, vibration, alert), and the Local Storage.
+			</p>
+			<p>
+			<h3>For your CRUD app revision and/or Demo App components, which of these do you think you will implement?</h3>
+			I want to use the Local Storage, Camera, and Contacts for my next CRUD revision.  I might also add Local Storage to my Demo App.
+			</p>
+			<p>
+			<h3>Briefly describe some past 'lessons learned' regarding workflow as it relates to research, design, development, etc.</h3>
+			I learned that I have to start working on my weekly school assignments very early and I also need to plan to work very long & late hours to fit everything into my schedule.  My phone is off, I don't answer the door, I don't go anywhere so I can just focus on getting all my work done.
+			</p>
+			<h3>Please describe any design intentions you may have for the AVF Demo app and the revised/new version of your CRUD app.</h3>
+			I want both of my apps to continue with the blue deep background.  I might bring back my original icons to be shown in the listviews and represent the project type for the list items.
+			</p>
+			<p>
+			<h3>If not covered above, please also describe any functionality intentions you may have for both the AVF Demo app and the revised/new version of your CRUD app.</h3>
+			I plan to get away from the couch db because it causes alot of issues regarding internet speed and I've even seen error messages that are on the cloudant website server side that I have no control over to fix.   My app uses such a small amount of data for storage / creation that my end users' local storage will be able to handle it fine.
+			</p>
+			<p><h3>References:</h3>
+			<a href="http://phonegap.com/about/features">PhoneGap Features</a><br />
+			<a href="http://caniuse.com/">When can I use? </a>
+			<a href="http://developer.apple.com/library/mac/#documentation/UserExperience/Conceptual/AppleHIGuidelines/Intro/Intro.html">OS X Human Interface Guidelines</a>
+			</p>
+			
+		</div>
+		<div data-role="footer" id="footer"><small>Copyright Monica Peters. All Rights Reserved.</small></div>
+	</div><!--/page /research_intent-->
+	
+	<div data-role="page" id="accessibility">
+				<div data-role="header" id="header"><a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a><center><h1>AVF Launch Page</h1></center></div>
+		<div data-role="content">
+			<h2>Research: Accessibility</h2>
+			<p>
+			<h3>What are some of the ways that you could change your HTML on your Demo app to be more accessible? (Remember, you can use the Section tag with jQuery, for instance)</h3>
+			<ul>
+				 <li>- Audio captcha for all my web forms.</li>
+				 <li>- Meaningful labels for every single form element.</li>
+				 <li>- Meaningful labels with alternative text description for every single graphic.</li>
+				 <li>- Never make it a requirement for the end user to put their mouse pointer on a map graphic, before they could use my demo app.</li>
+				 <li>- Audio Responses and Input as an option for visually & mobility impaired end users.</li>
+				 <li>- Responses and content as a PDF alternative because it's a common practice for visual & mobile impaired to use their screen readers to have PDF files read out loud to them.</li>
+			</ul>
+			</p>
+			
+			<p>
+			<h3>Visit a video service on the web (like YouTube) and search for "Screen Reader Demo" and "Mobile Screen Reader" - what are some of the common frustrations (or common support mechanisms) that you see among the examples that are given - how could you fix them (or use them)?</h3>
+					<ul data-role="listview" data-theme="b" data-divider-theme="b">
+						<li data-role="list-divider">Cluttered websites full of advertisements are useless for visual & mobile impaired end users. </li>
+								<li>
+									<p>- Remove clutter.</p>
+									<p>- Practice sound Usability Design guidelines.</p>
+									<p>- Get rid of the advertisements or at least move the advertisements to a meaningful labeled section of the web page.</p>
+									<p>- HotKeys for headings and form controls.</p>
+									<p>- HotKeys that follow the HotKey practices of the most popular websites will be useful because visual & mobile impaired end users do not have to dedicate more time to re-learning a new way to navigate.  The most popular websites have already established Hotkey navigation that visual & mobile impaired end users have become accustomed to.</p>
+								</li>
+								<li data-role="list-divider">Websites that lack meaningful labels on the graphics are non-accessible. </li>
+								<li>
+									<p>Include meaningful labels and alternative text for graphics.</p>
+								</li>
+								<li data-role="list-divider">Requiring end users to put their mouse pointer on a small graphic of a map is impossible for those that are visual or mobile impaired. </li>
+									<li>
+										<p>Speech input options for visual or mobile impaired end users to be able to speak their input.  Many computers and mobile devices have this feature already available and a developer can tap into those speech recognition features from their own websites and software.</p>
+									</li>
+								<li data-role="list-divider">Captcha forms make it impossible for visual impaired end users to submit a form.</li>
+								<li>
+									<p>- Audio captcha will make it possible for those end users to submit the form while still providing the extra security of blocking out spam bots.</p>
+									<p>- Mobile magnifcation and zoom can help visual & mobile impaired users navigate websites and mobile apps easier.</p>
+									<p>- Help Wizards & Getting Started Wizards that work with the screen reader features can help make it easier and more effective for visual & mobile impaired users to navigate and access exactly what they are looking for on a website and within a mobile app.</p>
+									<p>- Provide exact explicit content headers, navigation menu items that use common grammar so that visually impaired can find what they are looking for while they 'guess' what options might be available on your website or within your app.</p>
+									<p>- Sidewalk Navigation to provide location details that are helpful for those that rely on public transportation.</p>
+									<p>- Do not make touch tone a requirement for navigating mobile apps and phone help systems.</p>
+									<p>- Label every single form control.</p>
+									<p>- Offer large font-size and print options that are easy to access with common HotKeys.</p>
+								</li>
+					</ul>
+			</p>
+			<p>
+			<h3>Devices: Please list two devices (and some of their features) that are made specifically to support Accessibility.</h3>
+			    <ul>
+			   <li>- MobilePal + GPS was actually created to provide security for travelers.  It's a phone with only a big red call button and a small alarm button.  The traveler presses the red button and a concierge responds to them and provides directions, calls the travelers friends & family, and can send emergency responders ( police, ambulance ) to the travelers location.  The MobilePal sends the travelers location to the concierge automatically.  It's being improved so that visually impaired people will be able to use it for sidewalk travel directions and public transportation details that are a necessity for visual & mobile impaired travelers.</li>
+			   <li>- BrailleNote mPower converts braille documents to and from microsoft office documents to make it easier for visually impaired to share information with those that are not visually impaired.  A querty or braille keyboard is included.</li>
+			    </ul>
+			</p>
+			<p>
+			<h3>Mobile Apps: Please list two apps (either Android or iOS, or both) that are made specifically to support Accessibility.</h3>
+			   <ul>
+			   <li>- iOS; provides VoiceOver installed by default in the iPhone and iPad.  While it's not a seperate app that can be found in the app store, it's worth mentioning because as a Mobile Developer I can build my apps to be able to work with the VoiceOver features.</li>
+			   <li>- iOS: LookTel Money Reader app claims to instantly recognize currency and will say the denomination out loud so that visual impaired and blind people can count and identify their currency.  It uses the Mac's camera and can recognize US bills, Euro, British Pound, Australian bills, and Canadian bills.</li>
+			   <li>- iOS: Braille Visual Translator for iPhone translates the Italian Braille Table and computer Braille characters.</li>
+			   <li>- Android: Mobile Accessibility.  This is a screen-access app made for blind people.  It includes a screen reader and 10 applications for blind people, including email, gps, and phone.</li>
+			   <li>- Android:  Talkback, Kickback, Soundback.  These are system applications that add audio, vibration, and spoken features to the android device and they can be turned on and off in the system settings.</li>
+			</p>
+
+			<p>
+			<h3>References:</h3>
+			<a href="http://www.remotemdx.com">MobilePal + GPS. (June 30th 2012). <br />Retrieved from http://www.remotemdx.com</a><br /><br />
+			<a href="http://www.braillenotempower.com">BrailleNote mPower. (June 30th 2012).  <br />Retrieved from http://www.braillenotempower.com</a><br /><br />
+			<a href="http://www.afb.org">American Foundation for the Blind.  (June 30th 2012).  <br />Retrieved from http://www.afb.org</a><br /><br />
+			<a href="http://html5videoguide.net/presentations/OZeWAI2011/#1">HTML5 Video Accessibility.  (June 30th 2012).  <br />Retrieved from http://html5videoguide.net/presentations/OZeWAI2011/#1 </a><br /><br />
+			<a href="http://www.youtube.com/watch?v=qiKWTTtGq7U">Overview of JAWS Screenreader.  (June 30th 2012).  <br />Retrieved from http://www.youtube.com/watch?v=qiKWTTtGq7U</a><br /><br />
+			<a href="https://play.google.com/store/apps/">Mobile Accessibility for Android.  (June 30th 2012).  <br />Retrieved from https://play.google.com/store/apps/</a><br /><br />
+		</div>
+				<div data-role="footer" id="footer"><small>Copyright Monica Peters. All Rights Reserved.</small></div>
+	</div><!--/page /accessibility-->
+	
+	<div data-role="page" id="market_research">
+				<div data-role="header" id="header"><a href="#home" data-role="button" data-icon="home" data-iconpos="notext">Home</a><center><h1>AVF Launch Page</h1></center></div>
+		<div data-role="content">
+			<h2>Research: Market</h2>
+			<p>
+			<h3> What are the 'top selling' app categories in the U.S.?</h3>
+			</p>
+			<p>
+			<h3> What are the 'top selling' app categories in Japan?</h3>
+			</p>
+			<p>
+			<h3> What are the 'top selling' app categories in Great Britain?</h3>
+			</p>
+			<p>
+			<h3> Based on your three answers above, what might you infer about each of the markets listed?</h3>
+			</p>
+			<p>
+			<h3> What percentage of Android users have the latest/greatest OS in the U.S? in Japan? in Great Britain? How might these differences impact development?</h3>
+			</p>
+			<p>
+			<h3> What is the average cost and bandwidth limits per user (in general) in each of the three markets? How may this impact development?</h3>
+			</p>
+			<p>
+			<h3> What would be your suggested strategy in project topic and global market choice? Feel free to have a first and second choice.</h3>
+			</p>
+
+			<p>
+			<h3>References:</h3>
+			<a href="http://mobithinking.com/">Mobile Marketing Trends</a>
+			<a href="http://www.eurodroid.com/2011/05/19/stats-global-mobile-market-share-data-for-q1-2011/">Global Mobile Market Share Data for Q1 2011</a>
+			<a href="http://gs.statcounter.com/">Global Stat Counter</a>
+		</div>
+				<div data-role="footer" id="footer"><small>Copyright Monica Peters. All Rights Reserved.</small></div>
+	</div><!--/page /market_research-->
+
+	
+	<!--jquery and jquery mobile-->
+	<!--note that order of js is important below-->
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	
+	<!--plugins-->
+	<script src="http://html5.kaltura.org/js"></script>
+
+	<!--custom js-->	
+	<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
