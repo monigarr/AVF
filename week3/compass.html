@@ -1,0 +1,86 @@
+<!-- 
+ Monica Peters
+ Full Sail University
+ AVF Advanced Visual Frameworks
+ Monica Peters
+ Week 2
+ Due Thursday July 12th 2012
+ 
+ HTML Lint Test
+ passed July 1st 2012
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>Monica Peters Compass Demo</title>
+        
+		<meta type="charset" content="utf-8" />
+		<meta type="robots" content="index,follow" />
+		<meta type="description" content="Manage your personal media library" />
+		<meta type="keywords" content="media library, add media, monica peters, vfw" />
+		
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320"/>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="modernizr.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
+        
+		<!-- Monica's custom style sheet-->
+		<!-- call custom style sheets last when using jqmobile -->
+        <link rel="stylesheet" href="test.css" />
+		
+        
+	</head>
+	
+  	<body onload="onBodyLoad()">
+  		<div data-role="page" id="contacts">
+            <div data-role="header" id="header"></div><!--/header-->
+            <div data-role="content">
+                <h2>Compass Demo</h2>
+                <a href="index.html">Home</a>
+                <br /><br />
+
+                    <blockquote>
+                        <p>Obtains the direction that the device is pointing.</p>
+                    </blockquote>
+                    <h4 class="help"><b>Toggle</b> to stop/start
+                        compass watch. <br/><b>Get Current</b> for one-time compass reading.</h4>
+                    <div>
+                        Compass Heading: <b id="heading"></b>
+                    </div>
+                    <a class="btn deux" onclick="toggleCompass();">Toggle</a>
+                    <a class="btn deux" onclick="getCurrentHeading();">Get Current</a>
+
+                
+            </div><!--/content-->
+            <div data-role="footer" id="footer"><small>Monica Peters : AVF1206 : Compass Demo.</small></div>
+        </div><!--/page-->
+        
+        
+        <!--jquery and jquery mobile-->
+        <!--note that order of js is important below-->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        
+        
+        <!--plugins-->
+        <script type="text/javascript" src="test.js"></script>
+        <script type="text/javascript" src="compass.js"></script>
+        
+        <!--custom js-->	
+        
+        
+    </body>
+</html>
+
+
+
+

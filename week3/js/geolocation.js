@@ -3,6 +3,7 @@
 
 	function onBodyLoad()
 	{		
+		document.getElementById('geolocation').empty();
 		document.addEventListener("deviceready", onDeviceReady, false);
 	}
 

@@ -20,6 +20,7 @@
 /* PAGE LAYOUT */
 body {
 	background-image: url("../images/grid_bg.png");
+	font-size: 100%;
 }
 
 #header .ui-header .ui-bar-a {
@@ -27,7 +28,7 @@ body {
 	text-shadow: none;
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
-    font-size: 23px;
+    font-size: 1.4375em;
     font-weight: bold;
     padding: 0.5em 25px;
 }
@@ -38,7 +39,7 @@ h1 {
 	text-shadow: none;
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
-    font-size: 29px;
+    font-size: 1.8125em;
     font-weight: bold;
     padding: 0.5em 25px;
     margin: 0px;
@@ -276,7 +277,6 @@ h2#list_divider {
 
 li#androidios{
 	height: 32px; 
-	width: 64px;
 	background: url(../images/ios_android32x64.png) no-repeat;
 	margin: 3px;
 }
