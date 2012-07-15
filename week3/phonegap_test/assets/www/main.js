@@ -6,6 +6,27 @@
 //    Due Thursday June 28th 2012
 //    main.js
 
+// 	PhoneGap Default JS 
+	// If you want to prevent dragging, uncomment this section
+	/*
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	*/
+	
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	/*
+	function handleOpenURL(url)
+	{
+		// TODO: do something with the url passed in.
+	}
+	*/
+	
+	
 // Wait until DOM is ready
 window.addEventListener("DOMContentLoaded", function()
 {
@@ -200,9 +221,10 @@ window.addEventListener("DOMContentLoaded", function()
 	{
 		//add edit single item link
 		var editLink = document.createElement("a");
-		editLink.href = "#";
+		//do not use # as link for android
+		editLink.href = "index.html";
 		editLink.key = key;
-		var editText = "Edit Media";
+		var editText = "Edit";
 		editLink.addEventListener("click", editItem);
 		editLink.innerHTML = editText;
 		linksLi.appendChild(editLink);
@@ -213,12 +235,20 @@ window.addEventListener("DOMContentLoaded", function()
 		
 		//add delete single item link
 		var deleteLink = document.createElement("a");
-		deleteLink.href = "#";
+		//do not use # for ink with android app
+		deleteLink.href = "index.html";
 		deleteLink.key = key;
 		var deleteText = "Delete Media";
 		deleteLink.addEventListener("click", deleteItem);
 		deleteLink.innerHTML = deleteText;
 		linksLi.appendChild(deleteLink);
+		
+		//add link to top of page
+		var topLink = "Back to Top";
+		topLink.href = "#navigation";
+		topLink.addEventListener("click", topLink);
+		topLink.innerHTML = topLink;
+		linksLi.appendChild(topLink);
 	}
 	
 	//Edit single item
@@ -228,7 +258,7 @@ window.addEventListener("DOMContentLoaded", function()
 		var value = localStorage.getItem(this.key);
 		var item = JSON.parse(value);
 		
-		//show form to edit iem
+		//show form to edit item
 		toggleControls("off");
 		
 		//populate form fields with current local storage values
@@ -251,20 +281,13 @@ window.addEventListener("DOMContentLoaded", function()
 				radios(i).setAttribute("checked", "checked");
 			}
 		}
-		/*
-		// handle yes / no check box
-		if(obj.favorite(1) == "Yes")
-		{
-			$("fav").setAttributes("checked", "checked");
-		}
-		*/
 		$("mtags").value = item.mtags[1];
 		$("mcomments").value = item.mcomments[1];
 		
-		// Remove the initial listener from the input 'save media' button
+		// Remove initial listener from the input 'save media' button
 		save.removeEventListener("click", saveMedia);
-		// Change Submit button value to day Edit Button
-		$("submit").value = "Edit Media";
+		// Change Submit button value to say Edit Button
+		$("submit").value = "Edit";
 		var editSubmit = $("submit");
 		// Save the key value established in this Function as a property of the editSubmit event
 		// so we can use the value when we save the data we edited.
@@ -375,9 +398,14 @@ window.addEventListener("DOMContentLoaded", function()
 	// Set Link & Submit Click Events
 	var displayLink = $("displayLink");
 	displayLink.addEventListener("click", getData);
+	
 	var clearLink = $("clear");
 	clearLink.addEventListener("click", clearLocal);
+	
 	var save = $("submit");
 	//save.addEventListener("click", saveMedia);
 	save.addEventListener("click", validate);
+	
+	//var edit = $("edit");
+	//edit.addEventListener("click", editMedia);
 });
