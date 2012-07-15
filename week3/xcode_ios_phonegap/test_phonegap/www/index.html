@@ -1,130 +1,126 @@
 <!DOCTYPE html>
 <html lang=en dir="ltr" id="avfdemo" class="no-js">
-<!--
-#
-# Licensed to the Apache Software Foundation (ASF) under one
-# or more contributor license agreements.  See the NOTICE file
-# distributed with this work for additional information
-# regarding copyright ownership.  The ASF licenses this file
-# to you under the Apache License, Version 2.0 (the
-# "License"); you may not use this file except in compliance
-# with the License.  You may obtain a copy of the License at
-# 
-# http://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing,
-# software distributed under the License is distributed on an
-# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-#  KIND, either express or implied.  See the License for the
-# specific language governing permissions and limitations
-# under the License.
-#
--->
-  <head>
-  <title>AVF Phonegap C.R.U.D. Test</title>
-  <meta type="charset" content = "utf-8" />
-  <meta type="robots" content="index,follow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
-  <meta type="description" content="Manage your personal media library" />
-  <meta type="keywords" content = "media library, add media, monica peters, avf week 2" />
-  
-  <link rel="stylesheet" href="styles.css" type="text/css" />
-  <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
-          <!--[if lt IE 9]>
-          <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-          <![endif]-->        
+    <!--
+     #
+     # Licensed to the Apache Software Foundation (ASF) under one
+     # or more contributor license agreements.  See the NOTICE file
+     # distributed with this work for additional information
+     # regarding copyright ownership.  The ASF licenses this file
+     # to you under the Apache License, Version 2.0 (the
+     # "License"); you may not use this file except in compliance
+     # with the License.  You may obtain a copy of the License at
+     # 
+     # http://www.apache.org/licenses/LICENSE-2.0
+     # 
+     # Unless required by applicable law or agreed to in writing,
+     # software distributed under the License is distributed on an
+     # "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     #  KIND, either express or implied.  See the License for the
+     # specific language governing permissions and limitations
+     # under the License.
+     #
+     -->
+    <head>
+        <title>AVF Phonegap C.R.U.D. Test</title>
+        <meta type="charset" content = "utf-8" />
+        <meta type="robots" content="index,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <meta type="description" content="Manage your personal media library" />
+        <meta type="keywords" content = "media library, add media, monica peters, avf week 2" />
 
-	<!-- iPad/iPhone specific css below, add after your main css >
-	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
-	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
-	-->
-      
-	<!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
-	<script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
-    <script type="text/javascript">
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <link href="http://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" type="text/css">
+        <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
+            
+    </head>
+    <body>
+        <section id="main">
+            
+         <header>
+             <h1>Monica Peters Mobile App Demo</h1>
 
-
-	// If you want to prevent dragging, uncomment this section
-	/*
-	function preventBehavior(e) 
-	{ 
-      e.preventDefault(); 
-    };
-	document.addEventListener("touchmove", preventBehavior, false);
-	*/
-	
-	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
-	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
-	for more details -jm */
-	/*
-	function handleOpenURL(url)
-	{
-		// TODO: do something with the url passed in.
-	}
-	*/
-	
-	function onBodyLoad()
-	{		
-		document.addEventListener("deviceready", onDeviceReady, false);
-	}
-	
-	/* When this function is called, Cordova has been initialized and is ready to roll */
-	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
-	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
-	for more details -jm */
-	function onDeviceReady()
-	{
-		// do your thing!
-		// navigator.notification.alert("Cordova Works.")
-      console.log("Cordova is Here");
-	}
-    
-    </script>
-        
-        
-  </head>
-  <body onload="onBodyLoad()">
-          <header><h1><a href="index.html">Media Library</a></h2></header>
-          <article><p>Manage your personal media library.</p></article>	
-          <article>
-              <section>
-                  <br /><br />
-                  <center>
-                        <nav class="big_text">
-                          <a href="index.html" id="addNew" style="display:none;">Add New Media</a> ~
-                          <a href="#" id="displayLink">Show All Media</a> ~
-                          <a href="#" id="clear">Clear Stored Media</a> ~
-                          <a href="test.html" id="test">Test</a>
-                      </nav>
-                  </center>
-                  <br /><br />
-              </section>
-              <section id="errors"></section>
-              <form action="#" method="post" id="mediaForm">
+            <article id="navigation">
+                <div id="container">
+                <p class="center">
+                    <a href="geolocation.html" class="s3d navy">
+                        Geolocation
+                    </a>
+                    <a href="accelerometer.html" class="s3d navy">
+                        Accelerometer
+                    </a>
+                    <a href="camera.html" class="s3d navy">
+                        Camera
+                    </a>
+                </p>
+                <p class="center">
+                    <a href="storage.html" class="s3d teal">
+                        Storage
+                    </a>
+                    <a href="contacts.html" class="s3d teal">
+                        Contacts                    
+                    </a>
+                </p>
+                <p class="center">
+                    <a href="compass.html" class="s3d hotpink">
+                        Compass
+                    </a>
+                    <a href="notification_alert.html" class="s3d hotpink">
+                        Alert
+                    </a>
+                    <a href="video.html" class="s3d hotpink">
+                        Video 
+                    </a>
+                </p>
+                </div>
+            </article><!--/navigation-->
+        </header>
+        <hr />
+        <article id="errors"></article><!--/errors-->
+            
+        <article id="media_form">
+                    
+                  <form action="#" method="post" id="mediaForm">
                   <fieldset id="mediaFieldSet">
-                      <legend>ADD MEDIA</legend>
-                      <span>* fields are required.</span>
-                      <ul id="media">
-                          <li id="select"><label for="mtype">* Media Type:</label><br /></li>
-                          <li id="medianame"><label for="mname">* Media Name: </label> <input type="text" id="mname" /></li>
-                          <li id="mediadate"><label for="mdate">* Media Date: </label> <input type="date" id="mdate" placeholder="day/month/year" /></li>
-                          <li id="mediatopics"><label for="mtopic">Media Topic:</label>  
-                              <input type="radio" value="personal" id="personal" name="mtopics" /><label for="personal">Personal</label>
-                              <input type="radio" value="school" id="school" name="mtopics" /><label for="school">School</label>
-                              <input type="radio" value="work" id="work" name="mtopics" /><label for="work">Work</label>
-                          </li>
-                          <li id="mediatags"><label for="mtags">Media Tags:</label> <input type="text" id="mtags" /></li>
-                          <li id="mediacomments"><label for="mcomments">Media Comments:</label> <textarea id="mcomments" /></textarea></li>
-                          <center><input type="submit" value="Save Media" id="submit" /> </center>
-                          <br />
-                      </ul>
+                  <legend>ADD MEDIA</legend>
+                  <span>* fields are required.</span>
+                  <ul id="media">
+                  <li id="select"><label for="mtype">* Media Type:</label><br /></li>
+                  <li id="medianame"><label for="mname">* Media Name: </label> <input type="text" id="mname" /></li>
+                  <li id="mediadate"><label for="mdate">* Media Date: </label> <input type="date" id="mdate" placeholder="day/month/year" /></li>
+                  <li id="mediatopics"><label for="mtopic">Media Topic:</label>  
+                  <input type="radio" value="personal" id="personal" name="mtopics" /><label for="personal">Personal</label>
+                  <input type="radio" value="school" id="school" name="mtopics" /><label for="school">School</label>
+                  <input type="radio" value="work" id="work" name="mtopics" /><label for="work">Work</label>
+                  </li>
+                  <li id="mediatags"><label for="mtags">Media Tags:</label> <input type="text" id="mtags" /></li>
+                  <li id="mediacomments"><label for="mcomments">Media Comments:</label> <textarea id="mcomments" /></textarea></li>
+                  <input type="submit" value="Save Media" id="submit" />
+                  <br />
+                  </ul>
                   </fieldset>
-              </form>
-          </article>
-      
-      <footer>Monica Peters : AVF0612 : AVF PhoneGap iOS Demo</footer>
-          <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-          <script type="text/javascript" src="json.js"></script>
-          <script type="text/javascript" src="main.js"></script>
-      </body>
-</html>
+                  </form>  
+            <p class="center">
+            <a href="index.html" id="addNew" class="s3d orange">Add Media</a>
+            <a href="#items" id="displayLink" class="s3d orange">Show Media</a>
+            <a href="#" id="clear" class="s3d orange">Clear Media</a>
+            </p>
+        </section><!--/media_form-->
+       </article><!--/media_form-->
+    </section><!--/main--> 
+        <footer>Monica Peters : AVF0612 : AVF PhoneGap iOS Demo : WEEK 3 CRUD App</footer>
+        
+
+                <!--jquery and jquery mobile-->
+                <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+                
+                  <!--libraries-->
+
+                  <!--plugins-->
+
+        
+                  <!--custom-->
+                  <script type="text/javascript" src="json.js"></script>
+                  <script type="text/javascript" src="main.js"></script>
+        
+                  </body>
+                  </html>

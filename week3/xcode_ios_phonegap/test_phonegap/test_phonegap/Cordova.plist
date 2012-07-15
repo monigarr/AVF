@@ -17,12 +17,16 @@
 	<key>MediaPlaybackRequiresUserAction</key>
 	<false/>
 	<key>AllowInlineMediaPlayback</key>
-	<false/>
+	<true/>
 	<key>OpenAllWhitelistURLsInWebView</key>
-	<false/>
+	<true/>
 	<key>ExternalHosts</key>
 	<array>
+		<string>*.jquerymobile.com</string>
 		<string>*.gstatic.com</string>
+		<string>*.google.*
+*.google.*
+*.google.*</string>
 		<string>*.googleusercontent.com</string>
 		<string>*.googleapis.com</string>
 		<string>monicalamb.com</string>

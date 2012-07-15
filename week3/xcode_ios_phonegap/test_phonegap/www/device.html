@@ -1,0 +1,162 @@
+<!-- 
+ Monica Peters
+ Full Sail University
+ AVF Advanced Visual Frameworks
+ Monica Peters
+ Week 2
+ Due Thursday July 12th 2012
+ 
+ HTML Lint Test
+ passed July 1st 2012
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>Monica Peters Device Info Demo</title>
+        
+		<meta type="charset" content="utf-8" />
+		<meta type="robots" content="index,follow" />
+		<meta type="description" content="Manage your personal media library" />
+		<meta type="keywords" content="media library, add media, monica peters, vfw" />
+		
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320"/>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="modernizr.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
+		
+		<!-- Monica's custom style sheet-->
+		<!-- call custom style sheets last when using jqmobile -->
+        <link rel="stylesheet" href="test.css" />
+		
+        
+	</head>
+	
+  	<body class="center" onload="onBodyLoad()">
+  		<div data-role="page" id="contacts">
+            <header>
+                <h1>Device Info Demo</h1>
+                <a href="index.html" class="home">Home</a><br />
+                <article id="navigation">
+                    <div id="container">
+                        <p class="center">
+                        <a href="geolocation.html" class="s3d navy">
+                            Geolocation
+                        </a>
+                        <a href="accelerometer.html" class="s3d navy">
+                            Accelerometer
+                        </a>
+                        <a href="camera.html" class="s3d navy">
+                            Camera
+                        </a>
+                        </p>
+                        <p class="center">
+                        <a href="storage.html" class="s3d teal">
+                            Storage
+                        </a>
+                        <a href="contacts.html" class="s3d teal">
+                            Contacts                    
+                        </a>
+                        </p>
+                        <p class="center">
+                        <a href="compass.html" class="s3d hotpink">
+                            Compass
+                        </a>
+                        <a href="notification_alert.html" class="s3d hotpink">
+                            Alert
+                        </a>
+                        <a href="video.html" class="s3d hotpink">
+                            Video 
+                        </a>
+                        </p>
+                    </div>
+                </article><!--/navigation-->
+            </header>
+            <hr />
+            <div data-role="content">
+				<blockquote>
+					<p>The <code>device</code> object describes the device's hardware and software.</p>
+				</blockquote>
+				<h4><b>Important</b> Access <code>device</code> object only after <code>deviceready</code> event.</h4>
+				<table id="deviceinfo">
+					<tr>
+						<th>Device</th>
+						<th class="alt">Value</th>
+					</tr>
+					<tr>
+						<td>Name</td>
+						<td class="alt"><strong id="name">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<td>Platform</td>
+						<td class="alt"><strong id="platform">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<td>PhoneGap Version</td>
+						<td class="alt"><strong id="pgversion">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<td>UUID</td>
+						<td class="alt"><strong id="uuid">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<td>OS Version</td>
+						<td class="alt"><strong id="version">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<th>Screen</th>
+						<th class="alt">Value</th>
+					</tr>
+					<tr>
+						<td>Width</td>
+						<td class="alt"><strong id="width">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<td>Height</td>
+						<td class="alt"><strong id="height">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<td>Available Width</td>
+						<td class="alt"><strong id="availwidth">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<td>Available Height</td>
+						<td class="alt"><strong id="availheight">&nbsp;</strong></td>
+					</tr>
+					<tr>
+						<td>Color Depth</td>
+						<td class="alt"><strong id="colorDepth">&nbsp;</strong></td>
+					</tr>                                   
+				</table>                        				
+                
+            </div><!--/content-->
+        </div><!--/page-->
+        <div data-role="footer" id="footer"><small>Monica Peters : AVF1206 : Device Info Demo.</small></div>
+
+        
+        <!--jquery and jquery mobile-->
+        <!--note that order of js is important below-->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        
+        
+        <!--plugins-->
+        <script type="text/javascript" src="test.js"></script>
+        <script type="text/javascript" src="device.js"></script>
+        
+        <!--custom js-->	
+        
+        
+    </body>
+</html>
+
+
+

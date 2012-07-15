@@ -18,7 +18,7 @@ window.addEventListener("DOMContentLoaded", function()
                         var theElement = document.getElementById(x);
                         return theElement;
                         }
-                                                
+                        
                         // Create select field element
                         function makeMediaTypes() 
                         {
@@ -61,17 +61,18 @@ window.addEventListener("DOMContentLoaded", function()
                         switch(n)
                         {
                         case "on":
-                        $("mediaForm").style.display = "none";
-                        $("clear").style.display = "inline";
-                        $("displayLink").style.display = "none";
-                        $("addNew").style.display = "inline";
-                        break;
-                        case "off":
-                        $("mediaForm").style.display = "block";
+                        $("mediaForm").style.display = "inline";
                         $("clear").style.display = "inline";
                         $("displayLink").style.display = "inline";
-                        $("addNew").style.display = "none";
-                        $("items").style.display = "none";
+                        //$("addNew").style.display = "inline";
+                        break;
+                        
+                        case "off":
+                        $("mediaForm").style.display = "inline";
+                        $("clear").style.display = "inline";
+                        $("displayLink").style.display = "inline";
+                        $("addNew").style.display = "inline";
+                        $("items").style.display = "inline";
                         break;
                         default:
                         return false;
@@ -146,13 +147,14 @@ window.addEventListener("DOMContentLoaded", function()
                         autoFillData();
                         }
                         
-                        //Write Data from Local Storage to the Browser.
+                        //Write Data from Local Storage to the Browswer.
                         var makeDiv = document.createElement("div");
                         makeDiv.setAttribute("id","items");
                         var makeList = document.createElement("ul");
                         makeDiv.appendChild(makeList);
                         document.body.appendChild(makeDiv);
-                        //$("items").style.display = "black";
+                        //$("#items").append(makeDiv);
+                        $("items").style.display = "black";
                         
                         for(var i=0, len=localStorage.length; i<len; i++)
                         {
@@ -191,7 +193,6 @@ window.addEventListener("DOMContentLoaded", function()
                         var imageLi = document.createElement("li");
                         makeSubList.appendChild(imageLi);
                         var newImg = document.createElement("img");
-                        //var setSrc = newImg.setAttribute("src", "" + mediaType + ".png");
                         var setSrc = newImg.setAttribute("src", mediaType + ".jpg");
                         var setAlign = newImg.setAttribute("align", "left");
                         imageLi.appendChild(newImg);
@@ -379,13 +380,11 @@ window.addEventListener("DOMContentLoaded", function()
                         var displayLink = $("displayLink");
                         displayLink.addEventListener("click", getData);
                         
-						var clearLink = $("clear");
+                        
+                        var clearLink = $("clear");
                         clearLink.addEventListener("click", clearLocal);
                         
-						var save = $("submit");
+                        var save = $("submit");
                         //save.addEventListener("click", saveMedia);
-                        
-						save.addEventListener("click", validate);
-                        
-						
-						});
+                        save.addEventListener("click", validate);
+                        });
