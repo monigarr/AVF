@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5141855815A3AEB7005A2715 /* notification_alert.html in Resources */ = {isa = PBXBuildFile; fileRef = 5141855715A3AEB7005A2715 /* notification_alert.html */; };
+		5141855B15A3AFA9005A2715 /* notification_alert.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141855A15A3AFA9005A2715 /* notification_alert.js */; };
+		5141855D15A3B0BC005A2715 /* contacts.html in Resources */ = {isa = PBXBuildFile; fileRef = 5141855C15A3B0BC005A2715 /* contacts.html */; };
+		5141855F15A3B0CA005A2715 /* contacts.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141855E15A3B0CA005A2715 /* contacts.js */; };
+		5141856115A3B0E4005A2715 /* network_test.html in Resources */ = {isa = PBXBuildFile; fileRef = 5141856015A3B0E4005A2715 /* network_test.html */; };
+		5141856315A3B0F2005A2715 /* network_test.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141856215A3B0F2005A2715 /* network_test.js */; };
+		5141856515A3F198005A2715 /* modernizr.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141856415A3F198005A2715 /* modernizr.js */; };
+		5141856715A3F460005A2715 /* test.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141856615A3F460005A2715 /* test.js */; };
+		5141856B15A3F52D005A2715 /* test.css in Resources */ = {isa = PBXBuildFile; fileRef = 5141856A15A3F52D005A2715 /* test.css */; };
+		5141856D15A3F7C2005A2715 /* storage.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141856C15A3F7C2005A2715 /* storage.js */; };
+		5141856F15A3FAEE005A2715 /* file.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141856E15A3FAEE005A2715 /* file.js */; };
+		5141857115A3FB13005A2715 /* media.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141857015A3FB13005A2715 /* media.js */; };
+		5141857315A3FB6F005A2715 /* device.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141857215A3FB6F005A2715 /* device.js */; };
+		5141857515A3FBA9005A2715 /* compass.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141857415A3FBA9005A2715 /* compass.js */; };
+		5141857715A3FBD3005A2715 /* capture.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141857615A3FBD3005A2715 /* capture.js */; };
+		5141857915A40005005A2715 /* capture.html in Resources */ = {isa = PBXBuildFile; fileRef = 5141857815A40005005A2715 /* capture.html */; };
+		5141857B15A40044005A2715 /* compass.html in Resources */ = {isa = PBXBuildFile; fileRef = 5141857A15A40044005A2715 /* compass.html */; };
+		5141857D15A40222005A2715 /* storage.html in Resources */ = {isa = PBXBuildFile; fileRef = 5141857C15A40222005A2715 /* storage.html */; };
+		5141857F15A40860005A2715 /* media.html in Resources */ = {isa = PBXBuildFile; fileRef = 5141857E15A40860005A2715 /* media.html */; };
+		5141858315A40925005A2715 /* device.html in Resources */ = {isa = PBXBuildFile; fileRef = 5141858215A40925005A2715 /* device.html */; };
+		5141858715A410E6005A2715 /* layout.js in Sources */ = {isa = PBXBuildFile; fileRef = 5141858615A410E6005A2715 /* layout.js */; };
+		5159043415A22163004F029C /* walking_directions.html in Resources */ = {isa = PBXBuildFile; fileRef = 5159043315A22163004F029C /* walking_directions.html */; };
+		5159043715A22194004F029C /* walking_directions.js in Sources */ = {isa = PBXBuildFile; fileRef = 5159043615A22194004F029C /* walking_directions.js */; };
 		51983CD0159839C8000A499C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51983CCF159839C8000A499C /* Foundation.framework */; };
 		51983CD2159839C8000A499C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51983CD1159839C8000A499C /* UIKit.framework */; };
 		51983CD4159839C8000A499C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51983CD3159839C8000A499C /* CoreGraphics.framework */; };
@@ -38,6 +61,10 @@
 		51983D1B159839C9000A499C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51983D1A159839C9000A499C /* MainViewController.m */; };
 		51983D1D159839C9000A499C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51983D1C159839C9000A499C /* MainViewController.xib */; };
 		51983D2D159839F7000A499C /* www in Resources */ = {isa = PBXBuildFile; fileRef = 51983D2C159839F7000A499C /* www */; };
+		51BC62BE15B23E6C00C470CA /* jquery.collapsible.js in Sources */ = {isa = PBXBuildFile; fileRef = 51BC62BD15B23E6C00C470CA /* jquery.collapsible.js */; };
+		51BC62C915B25DA000C470CA /* gun_metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 51BC62C815B25DA000C470CA /* gun_metal.png */; };
+		51BC62CC15B25E0700C470CA /* gun_metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 51BC62CB15B25E0700C470CA /* gun_metal.png */; };
+		51BC62CE15B25E2C00C470CA /* gun_metal.png in Resources */ = {isa = PBXBuildFile; fileRef = 51BC62CD15B25E2C00C470CA /* gun_metal.png */; };
 		51D141AE159F80B2000868A6 /* json.js in Sources */ = {isa = PBXBuildFile; fileRef = 51D141AD159F80B2000868A6 /* json.js */; };
 		51D141B1159F80E2000868A6 /* main.js in Sources */ = {isa = PBXBuildFile; fileRef = 51D141B0159F80E2000868A6 /* main.js */; };
 		51D141B3159F8145000868A6 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 51D141B2159F8145000868A6 /* styles.css */; };
@@ -54,6 +81,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5141855715A3AEB7005A2715 /* notification_alert.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = notification_alert.html; path = www/notification_alert.html; sourceTree = "<group>"; };
+		5141855A15A3AFA9005A2715 /* notification_alert.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = notification_alert.js; path = www/notification_alert.js; sourceTree = "<group>"; };
+		5141855C15A3B0BC005A2715 /* contacts.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = contacts.html; path = www/contacts.html; sourceTree = "<group>"; };
+		5141855E15A3B0CA005A2715 /* contacts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = contacts.js; path = www/contacts.js; sourceTree = "<group>"; };
+		5141856015A3B0E4005A2715 /* network_test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = network_test.html; path = www/network_test.html; sourceTree = "<group>"; };
+		5141856215A3B0F2005A2715 /* network_test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = network_test.js; path = www/network_test.js; sourceTree = "<group>"; };
+		5141856415A3F198005A2715 /* modernizr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = modernizr.js; path = www/modernizr.js; sourceTree = "<group>"; };
+		5141856615A3F460005A2715 /* test.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = test.js; path = www/test.js; sourceTree = "<group>"; };
+		5141856A15A3F52D005A2715 /* test.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = test.css; path = www/test.css; sourceTree = "<group>"; };
+		5141856C15A3F7C2005A2715 /* storage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = storage.js; path = www/storage.js; sourceTree = "<group>"; };
+		5141856E15A3FAEE005A2715 /* file.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = file.js; path = www/file.js; sourceTree = "<group>"; };
+		5141857015A3FB13005A2715 /* media.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = media.js; path = www/media.js; sourceTree = "<group>"; };
+		5141857215A3FB6F005A2715 /* device.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = device.js; path = www/device.js; sourceTree = "<group>"; };
+		5141857415A3FBA9005A2715 /* compass.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = compass.js; path = www/compass.js; sourceTree = "<group>"; };
+		5141857615A3FBD3005A2715 /* capture.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = capture.js; path = www/capture.js; sourceTree = "<group>"; };
+		5141857815A40005005A2715 /* capture.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = capture.html; path = www/capture.html; sourceTree = "<group>"; };
+		5141857A15A40044005A2715 /* compass.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = compass.html; path = www/compass.html; sourceTree = "<group>"; };
+		5141857C15A40222005A2715 /* storage.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = storage.html; path = www/storage.html; sourceTree = "<group>"; };
+		5141857E15A40860005A2715 /* media.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = media.html; path = www/media.html; sourceTree = "<group>"; };
+		5141858215A40925005A2715 /* device.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = device.html; path = www/device.html; sourceTree = "<group>"; };
+		5141858615A410E6005A2715 /* layout.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = layout.js; path = www/layout.js; sourceTree = "<group>"; };
+		5159043315A22163004F029C /* walking_directions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = walking_directions.html; path = www/walking_directions.html; sourceTree = "<group>"; };
+		5159043615A22194004F029C /* walking_directions.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = walking_directions.js; path = www/walking_directions.js; sourceTree = "<group>"; };
 		51983CCB159839C8000A499C /* test_phonegap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_phonegap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51983CCF159839C8000A499C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		51983CD1159839C8000A499C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -92,6 +142,10 @@
 		51983D1F159839C9000A499C /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		51983D20159839C9000A499C /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
 		51983D2C159839F7000A499C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		51BC62BD15B23E6C00C470CA /* jquery.collapsible.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.collapsible.js; path = www/jquery.collapsible.js; sourceTree = "<group>"; };
+		51BC62C815B25DA000C470CA /* gun_metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gun_metal.png; sourceTree = "<group>"; };
+		51BC62CB15B25E0700C470CA /* gun_metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gun_metal.png; path = ../../../Git_Repositories/AVF/week3/phonegap_test/assets/www/gun_metal.png; sourceTree = "<group>"; };
+		51BC62CD15B25E2C00C470CA /* gun_metal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gun_metal.png; path = ../../../Git_Repositories/AVF/images/gun_metal.png; sourceTree = "<group>"; };
 		51D141AD159F80B2000868A6 /* json.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = json.js; path = www/json.js; sourceTree = "<group>"; };
 		51D141B0159F80E2000868A6 /* main.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = main.js; path = www/main.js; sourceTree = "<group>"; };
 		51D141B2159F8145000868A6 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = styles.css; path = www/styles.css; sourceTree = "<group>"; };
@@ -100,7 +154,7 @@
 		51D141B8159F81A4000868A6 /* geolocation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = geolocation.html; path = www/geolocation.html; sourceTree = "<group>"; };
 		51D141BA159F81C1000868A6 /* video.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = video.html; path = www/video.html; sourceTree = "<group>"; };
 		51D141D0159F9080000868A6 /* phonegap.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = phonegap.js; path = www/phonegap.js; sourceTree = "<group>"; };
-		51D141D2159F91F9000868A6 /* modernizr.js */ = {isa = PBXFileReference; explicitFileType = sourcecode.javascript; fileEncoding = 4; path = modernizr.js; sourceTree = "<group>"; };
+		51D141D2159F91F9000868A6 /* modernizr.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = modernizr.js; sourceTree = "<group>"; };
 		51D141D4159F924E000868A6 /* accelerometer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = accelerometer.js; path = www/accelerometer.js; sourceTree = "<group>"; };
 		51D141D6159F925F000868A6 /* camera.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = camera.js; path = www/camera.js; sourceTree = "<group>"; };
 		51D141D8159F926D000868A6 /* geolocation.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = geolocation.js; path = www/geolocation.js; sourceTree = "<group>"; };
@@ -142,6 +196,32 @@
 		51983CBD159839C8000A499C = {
 			isa = PBXGroup;
 			children = (
+				51BC62CD15B25E2C00C470CA /* gun_metal.png */,
+				51BC62CB15B25E0700C470CA /* gun_metal.png */,
+				51BC62BD15B23E6C00C470CA /* jquery.collapsible.js */,
+				5141858615A410E6005A2715 /* layout.js */,
+				5141858215A40925005A2715 /* device.html */,
+				5141857E15A40860005A2715 /* media.html */,
+				5141857C15A40222005A2715 /* storage.html */,
+				5141857A15A40044005A2715 /* compass.html */,
+				5141857815A40005005A2715 /* capture.html */,
+				5141857615A3FBD3005A2715 /* capture.js */,
+				5141857415A3FBA9005A2715 /* compass.js */,
+				5141857215A3FB6F005A2715 /* device.js */,
+				5141857015A3FB13005A2715 /* media.js */,
+				5141856E15A3FAEE005A2715 /* file.js */,
+				5141856C15A3F7C2005A2715 /* storage.js */,
+				5141856A15A3F52D005A2715 /* test.css */,
+				5141856615A3F460005A2715 /* test.js */,
+				5141856415A3F198005A2715 /* modernizr.js */,
+				5141856215A3B0F2005A2715 /* network_test.js */,
+				5141856015A3B0E4005A2715 /* network_test.html */,
+				5141855E15A3B0CA005A2715 /* contacts.js */,
+				5141855C15A3B0BC005A2715 /* contacts.html */,
+				5141855A15A3AFA9005A2715 /* notification_alert.js */,
+				5141855715A3AEB7005A2715 /* notification_alert.html */,
+				5159043615A22194004F029C /* walking_directions.js */,
+				5159043315A22163004F029C /* walking_directions.html */,
 				51D141DE159FBDBB000868A6 /* test.html */,
 				51D141D8159F926D000868A6 /* geolocation.js */,
 				51D141D6159F925F000868A6 /* camera.js */,
@@ -155,6 +235,7 @@
 				51D141B2159F8145000868A6 /* styles.css */,
 				51D141B0159F80E2000868A6 /* main.js */,
 				51D141AD159F80B2000868A6 /* json.js */,
+				51BC62C815B25DA000C470CA /* gun_metal.png */,
 				51983D2C159839F7000A499C /* www */,
 				51983CCE159839C8000A499C /* Frameworks */,
 				51983CCC159839C8000A499C /* Products */,
@@ -378,6 +459,19 @@
 				51D141B9159F81A4000868A6 /* geolocation.html in Resources */,
 				51D141BB159F81C1000868A6 /* video.html in Resources */,
 				51D141DF159FBDBB000868A6 /* test.html in Resources */,
+				5159043415A22163004F029C /* walking_directions.html in Resources */,
+				5141855815A3AEB7005A2715 /* notification_alert.html in Resources */,
+				5141855D15A3B0BC005A2715 /* contacts.html in Resources */,
+				5141856115A3B0E4005A2715 /* network_test.html in Resources */,
+				5141856B15A3F52D005A2715 /* test.css in Resources */,
+				5141857915A40005005A2715 /* capture.html in Resources */,
+				5141857B15A40044005A2715 /* compass.html in Resources */,
+				5141857D15A40222005A2715 /* storage.html in Resources */,
+				5141857F15A40860005A2715 /* media.html in Resources */,
+				5141858315A40925005A2715 /* device.html in Resources */,
+				51BC62C915B25DA000C470CA /* gun_metal.png in Resources */,
+				51BC62CC15B25E0700C470CA /* gun_metal.png in Resources */,
+				51BC62CE15B25E2C00C470CA /* gun_metal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +508,20 @@
 				51D141D5159F924E000868A6 /* accelerometer.js in Sources */,
 				51D141D7159F925F000868A6 /* camera.js in Sources */,
 				51D141D9159F926D000868A6 /* geolocation.js in Sources */,
+				5159043715A22194004F029C /* walking_directions.js in Sources */,
+				5141855B15A3AFA9005A2715 /* notification_alert.js in Sources */,
+				5141855F15A3B0CA005A2715 /* contacts.js in Sources */,
+				5141856315A3B0F2005A2715 /* network_test.js in Sources */,
+				5141856515A3F198005A2715 /* modernizr.js in Sources */,
+				5141856715A3F460005A2715 /* test.js in Sources */,
+				5141856D15A3F7C2005A2715 /* storage.js in Sources */,
+				5141856F15A3FAEE005A2715 /* file.js in Sources */,
+				5141857115A3FB13005A2715 /* media.js in Sources */,
+				5141857315A3FB6F005A2715 /* device.js in Sources */,
+				5141857515A3FBA9005A2715 /* compass.js in Sources */,
+				5141857715A3FBD3005A2715 /* capture.js in Sources */,
+				5141858715A410E6005A2715 /* layout.js in Sources */,
+				51BC62BE15B23E6C00C470CA /* jquery.collapsible.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,86 +21,52 @@
      #
      -->
     <head>
-        <title>AVF Phonegap C.R.U.D. Test</title>
+        <title>AVF Phonegap iOS Native Features Test</title>
         <meta type="charset" content = "utf-8" />
         <meta type="robots" content="index,follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
         <meta type="description" content="Manage your personal media library" />
         <meta type="keywords" content = "media library, add media, monica peters, avf week 2" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="modernizr.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
         
         <link rel="stylesheet" href="styles.css" type="text/css" />
-        <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
-            <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <![endif]-->        
-            
-            <!-- iPad/iPhone specific css below, add after your main css >
-            <link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />		
-            <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />		
-            -->
-            
-            <!-- If your application is targeting iOS BEFORE 4.0 you MUST put json2.js from http://www.JSON.org/json2.js into your www directory and include it here -->
-            <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
-            <script type="text/javascript">
-            
-            
-            // If you want to prevent dragging, uncomment this section
-            /*
-            function preventBehavior(e) 
-            { 
-            e.preventDefault(); 
-            };
-            document.addEventListener("touchmove", preventBehavior, false);
-            */
-            
-            /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
-            see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
-            for more details -jm */
-            /*
-            function handleOpenURL(url)
-            {
-            // TODO: do something with the url passed in.
-            }
-            */
-            
-            function onBodyLoad()
-            {		
-            document.addEventListener("deviceready", onDeviceReady, false);
-            }
-            
-            /* When this function is called, Cordova has been initialized and is ready to roll */
-            /* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
-            see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
-            for more details -jm */
-            function onDeviceReady()
-            {
-            // do your thing!
-            // navigator.notification.alert("Cordova Works.")
-            console.log("Cordova is Here");
-            }
-            
-            </script>
-            
-            
-            </head>
-            <body onload="onBodyLoad()">
+        <link href="http://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet" type="text/css">    
+     
+    </head>
+            <body class="center" >
             <header><h1><a href="index.html">Media Library</a></h2></header>
             <article><p>Manage your personal media library.</p></article>	
             
             <article id="test_native_features">
             <h3>Test Native Mobile App Features</h3>
             <ul data-role="listview" data-filter="true">
-            <li><a href="accelerometer.html" data-rel="external">Accelerometer</a></li>
-            <li><a href="geolocation.html" data-rel="external">Geolocation</a></li>
-            <li><a href="camera.html" data-rel="external">Camera</a></li>      
-            <li>Notifications</li>      
-            <li>Media</li> 
-            <li>Storage</li>
-            <li><a href="video.html" data-rel="external">Video</a></li>
+                <li><a href="accelerometer.html">Accelerometer</a></li>
+                <li><a href="camera.html">Camera</a></li>
+                <li><a href="capture.html">Capture Audio</a></li>
+                <li><a href="compass.html">Compass</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+                <li><a href="device.html">Device Info</a></li>
+                <li><a href="events.thml">Events</a></li>
+                <li><a href="file.html">File</a></li>
+                <li><a href="geolocation.html">Geolocation</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="network_test.html">Network Test</a></li>
+                <li><a href="notification_alert.html">Notification: Alert, Beep, Vibrate</a></li>      
+                <li><a href="storage.html">Storage</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="walking_directions.html">Walking Directions</a></li>
             </ul>
             </article>
             <footer>Monica Peters : AVF0612 : AVF PhoneGap iOS Demo</footer>
-            <script type="text/javascript" src="json.js"></script>
-            <script type="text/javascript" src="main.js"></script>
+                
+                <!--jquery and jquery mobile-->
+                <!--note that order of js is important below-->
+                <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+                
+                <script type="text/javascript" src="test.js"></script>
+                
             </body>
             </html>

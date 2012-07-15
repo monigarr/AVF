@@ -64,7 +64,7 @@ function captureImage() {
     }
 }
 
-// Use a button to call this
+// Use a button to call this.  Not working yet.
 function captureImageEdit() {
     try {
         // Take picture using device camera, allow edit, and retrieve image as base64-encoded string
@@ -78,7 +78,7 @@ function captureImageEdit() {
     }
 }
 
-// Use a button to call this
+// Use a button to call this.  Not working yet.
 function getPhoto(source) {
     
     try {
@@ -98,3 +98,11 @@ function onFail(message) {
     
     alert('Failed: ' + message);
 }
+
+// Save Photo to LocalStorage
+
+// Upload Photo to Server
+
+// Share link to Photo on Facebook
+
+// Email Photo
