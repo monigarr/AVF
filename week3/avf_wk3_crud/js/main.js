@@ -1,13 +1,32 @@
 //
 //    Full Sail University
-//    Visual Frameworks
+//    Advanced Visual Frameworks
 //    Monica Peters
-//    Web App Part 4
-//    Week 4 Project 4
-//    Due Thursday Feb. 23rd 2012
+//    Week 1 PhoneGap
+//    Due Thursday June 28th 2012
 //    main.js
-//    javascript lint: warning function validate & function togglecontrols does not always return value
 
+// 	PhoneGap Default JS 
+	// If you want to prevent dragging, uncomment this section
+	/*
+	function preventBehavior(e) 
+	{ 
+      e.preventDefault(); 
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	*/
+	
+	/* If you are supporting your own protocol, the var invokeString will contain any arguments to the app launch.
+	see http://iphonedevelopertips.com/cocoa/launching-your-own-application-via-a-custom-url-scheme.html
+	for more details -jm */
+	/*
+	function handleOpenURL(url)
+	{
+		// TODO: do something with the url passed in.
+	}
+	*/
+	
+	
 // Wait until DOM is ready
 window.addEventListener("DOMContentLoaded", function()
 {
@@ -20,7 +39,7 @@ window.addEventListener("DOMContentLoaded", function()
 	}
 	
 	// Create select field element
-	function makeMediaTypes() 
+	var makeMediaTypes = function() 
 	{
 		//formTag is an array of all form tags
 		var formTag = document.getElementsByTagName("form"),
@@ -39,10 +58,10 @@ window.addEventListener("DOMContentLoaded", function()
 			makeSelect.appendChild(makeOption);
 		}
 		selectLi.appendChild(makeSelect);
-	}
+	};
 	
 	//Find value of Selected Radio Button
-	function getSelectedRadio()
+	var getSelectedRadio = function()
 	{
 		//create radio array
 		var radios = document.forms[0].mtopics;
@@ -56,7 +75,7 @@ window.addEventListener("DOMContentLoaded", function()
 	}
 	
 	//Turn nav links off / on
-	function toggleControls(n)
+	var toggleControls = function(n)
 	{
 		switch(n)
 		{
@@ -76,9 +95,9 @@ window.addEventListener("DOMContentLoaded", function()
 			default:
 				return false;
 		}
-	}
+	};
 	
-	function saveMedia(key)
+	var saveMedia = function(key)
 	{
 		//if no key, this is brand new item 
 		//so we need new key
@@ -120,9 +139,10 @@ window.addEventListener("DOMContentLoaded", function()
 			//json.org
 			localStorage.setItem(id, JSON.stringify(item));
 			alert("Media Saved");
-	}
+	};
+
 	//Auto Populate local storage
-	function autoFillData()
+	var autoFillData = function()
 	{
 		//actual JSON Object data is coming from json.js file.
 		//json.js file is loaded from additem.html
@@ -132,9 +152,9 @@ window.addEventListener("DOMContentLoaded", function()
 			var id = Math.floor(Math.random()*10000001);
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		}
-	}
+	};
 	
-	function getData()
+	var getData = function()
 	{
 		//Write Data from Local Storage to the Browser
 		toggleControls("on");
@@ -183,28 +203,29 @@ window.addEventListener("DOMContentLoaded", function()
 			//for each item in local storage.
 			makeItemLinks(localStorage.key(i), linksLi);
 		}
-	}
+	};
 	
 	//Get image for the relevant media type displayed
-	function getImage(mediaType, makeSubList)
+	var getImage = function(mediaType, makeSubList)
 	{
 		var imageLi = document.createElement("li");
 		makeSubList.appendChild(imageLi);
 		var newImg = document.createElement("img");
-		var setSrc = newImg.setAttribute("src", "images/" + mediaType + ".jpg");
+		var setSrc = newImg.setAttribute("src", "" + mediaType + ".jpg");
 		var setAlign = newImg.setAttribute("align", "left");
 		imageLi.appendChild(newImg);
-	}
+	};
 	
 	//Make Item Links
 	//Create Edit and Delete links for each stored item when displayed
-	function makeItemLinks(key, linksLi)
+	var makeItemLinks = function(key, linksLi)
 	{
 		//add edit single item link
 		var editLink = document.createElement("a");
-		editLink.href = "#";
+		//do not use # as link for android
+		editLink.href = "index.html";
 		editLink.key = key;
-		var editText = "Edit Media";
+		var editText = "Edit";
 		editLink.addEventListener("click", editItem);
 		editLink.innerHTML = editText;
 		linksLi.appendChild(editLink);
@@ -215,22 +236,30 @@ window.addEventListener("DOMContentLoaded", function()
 		
 		//add delete single item link
 		var deleteLink = document.createElement("a");
-		deleteLink.href = "#";
+		//do not use # for ink with android app
+		deleteLink.href = "index.html";
 		deleteLink.key = key;
 		var deleteText = "Delete Media";
 		deleteLink.addEventListener("click", deleteItem);
 		deleteLink.innerHTML = deleteText;
 		linksLi.appendChild(deleteLink);
-	}
+		
+		//add link to top of page
+		var topLink = "Back to Top";
+		topLink.href = "#navigation";
+		topLink.addEventListener("click", topLink);
+		topLink.innerHTML = topLink;
+		linksLi.appendChild(topLink);
+	};
 	
 	//Edit single item
-	function editItem()
+	var editItem = function()
 	{
 		//Grab data from Item from local storage.
 		var value = localStorage.getItem(this.key);
 		var item = JSON.parse(value);
 		
-		//show form to edit iem
+		//show form to edit item
 		toggleControls("off");
 		
 		//populate form fields with current local storage values
@@ -253,28 +282,21 @@ window.addEventListener("DOMContentLoaded", function()
 				radios(i).setAttribute("checked", "checked");
 			}
 		}
-		/*
-		// handle yes / no check box
-		if(obj.favorite(1) == "Yes")
-		{
-			$("fav").setAttributes("checked", "checked");
-		}
-		*/
 		$("mtags").value = item.mtags[1];
 		$("mcomments").value = item.mcomments[1];
 		
-		// Remove the initial listener from the input 'save media' button
+		// Remove initial listener from the input 'save media' button
 		save.removeEventListener("click", saveMedia);
-		// Change Submit button value to day Edit Button
-		$("submit").value = "Edit Media";
+		// Change Submit button value to say Edit Button
+		$("submit").value = "Edit";
 		var editSubmit = $("submit");
 		// Save the key value established in this Function as a property of the editSubmit event
 		// so we can use the value when we save the data we edited.
 		editSubmit.addEventListener("click", validate);
 		editSubmit.key = this.key;
-	}
+	};
 	
-	function deleteItem()
+	var deleteItem = function()
 	{
 		var ask = confirm("Are you sure you want to delete this media?");
 		if(ask)
@@ -287,9 +309,9 @@ window.addEventListener("DOMContentLoaded", function()
 		{
 			alert("Media was Not Deleted");
 		}
-	}
+	};
 	
-	function clearLocal()
+	var clearLocal = function()
 	{
 		if(localStorage.length === 0)
 		{
@@ -304,9 +326,9 @@ window.addEventListener("DOMContentLoaded", function()
 			//populate with test data
 			autoFillData();
 		}
-	}
+	};
 	
-	function validate(e)
+	var validate = function(e)
 	{
 		//Define elements we want to check
 		var getMtype = $("mtype");
@@ -363,7 +385,7 @@ window.addEventListener("DOMContentLoaded", function()
 			//as a property.
 			saveMedia(this.key);
 		}
-	}
+	};
 	
 	
 	// Variable defaults
@@ -377,9 +399,14 @@ window.addEventListener("DOMContentLoaded", function()
 	// Set Link & Submit Click Events
 	var displayLink = $("displayLink");
 	displayLink.addEventListener("click", getData);
+	
 	var clearLink = $("clear");
 	clearLink.addEventListener("click", clearLocal);
+	
 	var save = $("submit");
 	//save.addEventListener("click", saveMedia);
 	save.addEventListener("click", validate);
+	
+	//var edit = $("edit");
+	//edit.addEventListener("click", editMedia);
 });

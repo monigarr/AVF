@@ -39,7 +39,7 @@ window.addEventListener("DOMContentLoaded", function()
 	}
 	
 	// Create select field element
-	function makeMediaTypes() 
+	var makeMediaTypes = function() 
 	{
 		//formTag is an array of all form tags
 		var formTag = document.getElementsByTagName("form"),
@@ -58,10 +58,10 @@ window.addEventListener("DOMContentLoaded", function()
 			makeSelect.appendChild(makeOption);
 		}
 		selectLi.appendChild(makeSelect);
-	}
+	};
 	
 	//Find value of Selected Radio Button
-	function getSelectedRadio()
+	var getSelectedRadio = function()
 	{
 		//create radio array
 		var radios = document.forms[0].mtopics;
@@ -75,7 +75,7 @@ window.addEventListener("DOMContentLoaded", function()
 	}
 	
 	//Turn nav links off / on
-	function toggleControls(n)
+	var toggleControls = function(n)
 	{
 		switch(n)
 		{
@@ -95,9 +95,9 @@ window.addEventListener("DOMContentLoaded", function()
 			default:
 				return false;
 		}
-	}
+	};
 	
-	function saveMedia(key)
+	var saveMedia = function(key)
 	{
 		//if no key, this is brand new item 
 		//so we need new key
@@ -139,9 +139,10 @@ window.addEventListener("DOMContentLoaded", function()
 			//json.org
 			localStorage.setItem(id, JSON.stringify(item));
 			alert("Media Saved");
-	}
+	};
+
 	//Auto Populate local storage
-	function autoFillData()
+	var autoFillData = function()
 	{
 		//actual JSON Object data is coming from json.js file.
 		//json.js file is loaded from additem.html
@@ -151,9 +152,9 @@ window.addEventListener("DOMContentLoaded", function()
 			var id = Math.floor(Math.random()*10000001);
 			localStorage.setItem(id, JSON.stringify(json[n]));
 		}
-	}
+	};
 	
-	function getData()
+	var getData = function()
 	{
 		//Write Data from Local Storage to the Browser
 		toggleControls("on");
@@ -202,10 +203,10 @@ window.addEventListener("DOMContentLoaded", function()
 			//for each item in local storage.
 			makeItemLinks(localStorage.key(i), linksLi);
 		}
-	}
+	};
 	
 	//Get image for the relevant media type displayed
-	function getImage(mediaType, makeSubList)
+	var getImage = function(mediaType, makeSubList)
 	{
 		var imageLi = document.createElement("li");
 		makeSubList.appendChild(imageLi);
@@ -213,11 +214,11 @@ window.addEventListener("DOMContentLoaded", function()
 		var setSrc = newImg.setAttribute("src", "" + mediaType + ".jpg");
 		var setAlign = newImg.setAttribute("align", "left");
 		imageLi.appendChild(newImg);
-	}
+	};
 	
 	//Make Item Links
 	//Create Edit and Delete links for each stored item when displayed
-	function makeItemLinks(key, linksLi)
+	var makeItemLinks = function(key, linksLi)
 	{
 		//add edit single item link
 		var editLink = document.createElement("a");
@@ -249,10 +250,10 @@ window.addEventListener("DOMContentLoaded", function()
 		topLink.addEventListener("click", topLink);
 		topLink.innerHTML = topLink;
 		linksLi.appendChild(topLink);
-	}
+	};
 	
 	//Edit single item
-	function editItem()
+	var editItem = function()
 	{
 		//Grab data from Item from local storage.
 		var value = localStorage.getItem(this.key);
@@ -293,9 +294,9 @@ window.addEventListener("DOMContentLoaded", function()
 		// so we can use the value when we save the data we edited.
 		editSubmit.addEventListener("click", validate);
 		editSubmit.key = this.key;
-	}
+	};
 	
-	function deleteItem()
+	var deleteItem = function()
 	{
 		var ask = confirm("Are you sure you want to delete this media?");
 		if(ask)
@@ -308,9 +309,9 @@ window.addEventListener("DOMContentLoaded", function()
 		{
 			alert("Media was Not Deleted");
 		}
-	}
+	};
 	
-	function clearLocal()
+	var clearLocal = function()
 	{
 		if(localStorage.length === 0)
 		{
@@ -325,9 +326,9 @@ window.addEventListener("DOMContentLoaded", function()
 			//populate with test data
 			autoFillData();
 		}
-	}
+	};
 	
-	function validate(e)
+	var validate = function(e)
 	{
 		//Define elements we want to check
 		var getMtype = $("mtype");
@@ -384,7 +385,7 @@ window.addEventListener("DOMContentLoaded", function()
 			//as a property.
 			saveMedia(this.key);
 		}
-	}
+	};
 	
 	
 	// Variable defaults

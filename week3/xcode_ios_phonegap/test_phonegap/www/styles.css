@@ -24,7 +24,7 @@ body {
 
 .center {
     text-align: center;
-    padding: 3px 3px 3px 3px;
+    padding: 0.188em 0.188em 0.188em 0.188em;
 }
 
 #header {
@@ -32,18 +32,18 @@ body {
 	text-shadow: none;
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
-    font-size: 23px;
+    font-size: 1.438em;
     font-weight: bold;
-    padding: 0.5em 25px;
+    padding: 0.5em 1.563em;
 }
 
 /* PURE CSS HR IMAGES */
 /* http://jsbin.com/ayidu3 */
 hr {
     position: relative;
-    margin-top: 20px;
+    margin-top: 1.250em;
     background: #C0C0C0;
-    height: 2px;
+    height: 0.125em;
 }
 
 hr:before {
@@ -52,10 +52,10 @@ hr:before {
     text-align: center;
     width: .8em;
     left: 50%;
-    margin: -14px 0 0 -8px;
+    margin: -0.875em 0 0 -0.500em;
     content: "\272A";
     font-size: 150%;
-    padding: 0 8px 0 8px;
+    padding: 0 0.500em 0 0.500em;
 }
 
 hr.star:before {
@@ -75,9 +75,9 @@ h1 {
 	text-shadow: none;
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
-    font-size: 29px;
+    font-size: 1.813em;
     font-weight: bold;
-    padding: 0.5em 25px;
+    padding: 0.5em 1.563em;
     margin: 0;
     text-align: center;
 }
@@ -86,11 +86,11 @@ a:link {
 	text-decoration: none;
 }
 
-@media all and (min-width: 650px){	
+@media all and (min-width: 40.625em){	
 	.left_side {
 		float: left;
 		width: 45%;
-		margin: 30px 0 20px 2%;
+		margin: 1.875em 0 1.250em 2%;
 		padding: 0 4% 0 0;
 	}
 	.right_side {
@@ -105,7 +105,7 @@ a:link {
 
 
 }
-@media all and (min-width: 750px){
+@media all and (min-width: 46.875em){
 	.left_side {
 		width: 45%;
 	}
@@ -115,11 +115,11 @@ a:link {
 	}	
 }
 
-@media all and (min-width: 1200px){
+@media all and (min-width: 75em){
 	.left_side {
 		width: 45%;
 		padding-left:3%;
-		margin: 30px 0 20px 0;
+		margin: 1.875em 0 1.250em 0;
 	}
 	.right_side {
 		width: 45%;
@@ -133,8 +133,8 @@ div#items {
     width: auto;
     height: auto;
     margin: auto;
-    padding: 5px;
-    outline: dashed;
+    padding: 0.313em;
+    outline: none;
     color: navy;
     font-weight: normal;
     line-height: 1.2em;
@@ -153,46 +153,46 @@ div#items {
 }
 
 .projectImage {
-	height: 75px; 
-	width: 75px; 
+	height: 4.688em; 
+	width: 4.688em; 
 	background: url("showoff_75x75.png") no-repeat center left;
 	text-align: left;
 }
 
 #githubImage {
-	height: 64px; 
-	width: 64px; 
+	height: 4em; 
+	width: 4em; 
 	background: url("github64x64.png") no-repeat top left;
 }
 
 .android48Image {
-	height: 48px; 
-	width: 48px; 
+	height: 3em; 
+	width: 3em; 
 	background: url("android_circle_48x48.png") no-repeat top left;
-	margin: 3px;
+	margin: 0.188em;
 }
 
 .ios48Image {
-	height: 48px; 
-	width: 48px; 
+	height: 3em; 
+	width: 3em; 
 	background: url("iphone48x48.png") no-repeat top left;
 	padding: 0px;
-	margin: 3px;
+	margin: 0.188em;
 }
 
 div#crud_apps {
 	text-align: center;
-	width: 800px;
+	width: 50em;
 }
 /* stop images */
 
 /* ACCELEROMETER */
 #sphere {
 	position:absolute;
-	width:150px;
-	height:150px;
-	border-radius:50px;-
-	webkit-radius:50px;
+	width:9.375em;
+	height:9.375em;
+	border-radius:3.125em;
+	webkit-radius:3.125em;
 	background-color:#00ff00;
 }
 
@@ -200,7 +200,7 @@ div#crud_apps {
 label.error{
 	/*default is inline*/
 	display: block;
-	margin: 10px 0;
+	margin: 0.625em 0;
 	color: #ff6600;
 }
 
@@ -226,7 +226,7 @@ button#submit {
 	display: inline;
 	text-align: left;
 	width: 15%;
-	margin: 3px 3px 3px 3px;
+	margin: 0.188em 0.188em 0.188em 0.188em;
 }
 
 /* stop forms */
@@ -269,7 +269,7 @@ button#submit {
 
 /* LISTS */
 #list_divider_title {
-	font-size: 20px;
+	font-size: 1.250em;
 	color: #3399FF;
 	text-align: left;
 }
@@ -284,21 +284,21 @@ h2#list_divider {
     text-shadow: none;
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: bold;
-    padding: 0.5em 25px;
+    padding: 0.5em 1.563em;
 }
 
 li#androidios{
-	height: 32px; 
-	width: 64px;
+	height: 2em; 
+	width: 4em;
 	background: url("ios_android32x64.png") no-repeat;
-	margin: 3px;
+	margin: 0.188em;
 }
 
 li#ios{
-	height: 32px; 
-	width: 32px;
+	height: 2em; 
+	width: 2em;
 	background: url("ios_32x64.png") no-repeat;
 	margin: 3px;
 }
@@ -307,7 +307,7 @@ li#android {
 	height: 32px; 
 	width: 32px;
 	background: url("android_32x64.png") no-repeat;
-	margin: 3px;
+	margin: 0.188em;
 }
 
 section ul li span:hover{
@@ -322,12 +322,12 @@ section ul{
     margin: 0 0 1em 0;
 }
 section ul li{
-	border-top: 1px solid #efefef;
+	border-top: 0.063em solid #efefef;
     color: #444444;
     font-weight: bold;
-    text-shadow: 0 1px 1px #FFFFFF;
+    text-shadow: 0 0.063em 0.063em #FFFFFF;
     display: block;
-    padding: .6em 8px .6em 25px;
+    padding: .6em 8px .6em 1.563em;
 }
 section ul li a{
 	display: block;
@@ -340,14 +340,14 @@ section ul li span{
     color: #FFFFFF;
     display: block;
     float: right;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: bold;
-    height: 25px;
-    line-height: 26px;
-    margin-right: 5px;
+    height: 1.563em;
+    line-height: 1.625em;
+    margin-right: 0.313em;
     text-align: center;
     text-shadow: none;
-    width: 25px;
+    width: 1.563em;
 }
 
 li {
@@ -373,7 +373,7 @@ a.btn_contacts {
         font-weight: bold;
         text-decoration:none;
         padding:0.7em 0.1em;
-        margin: 5px auto;       
+        margin: 0.313em auto;       
 }
 
 /* stop contacts */
@@ -399,7 +399,7 @@ li a:link,
 li a:visited {
     display:block;
     border:0;
-    padding-left:28px;
+    padding-left: 1.750em;
     color:#ea66ac;
 }
 
@@ -422,7 +422,7 @@ li a:after {
 
 li a:before,
 li a:after {
-    margin:-8px 0 0;
+    margin:-0.500em 0 0;
     background:#ea66ac;
 }
 
@@ -436,19 +436,19 @@ li a:active:before {
     left:1px;
     border-style:solid;
     border-color:transparent;
-    border-width:8px 7px;
+    border-width:0.500em 0.438em;
     border-bottom-color:#ea66ac;
-    margin-top:-16px;
+    margin-top:-1em;
     background:transparent;
 }
 
 .home a:after {
-    left:3px;
-    width:2px;
-    height:4px;
+    left:0.188em;
+    width:0.125em;
+    height:0.250em;
     border-style:solid;
     border-color:#ea66ac #ea66ac transparent;
-    border-width:3px 4px 0;
+    border-width:0.188em 0.250em 0;
     margin-top:0;
     background:transparent;
 }
@@ -469,21 +469,21 @@ li a:active:before {
 
 a.s3d  {
     clear: both;
-    -webkit-border-radius:3px;
-       -moz-border-radius:3px;
-            border-radius:3px;
-    -webkit-box-shadow:0 4px 5px rgba(0,0,0,.3);
-       -moz-box-shadow:0 4px 5px rgba(0,0,0,.3);
-            box-shadow:0 4px 5px rgba(0,0,0,.3);
+    -webkit-border-radius:0.188em;
+       -moz-border-radius:0.188em;
+            border-radius:0.188em;
+    -webkit-box-shadow:0 0.250em 0.313em rgba(0,0,0,.3);
+       -moz-box-shadow:0 0.250em 0.313em rgba(0,0,0,.3);
+            box-shadow:0 0.250em 0.313em rgba(0,0,0,.3);
     display: inline-block !important;
     font: 700 13px/36px 'Arial', Helvetica, Clean, sans-serif;
-    height: 26px;
-    margin: 0 0 10px;
-    padding: 0 10px 11px;
+    height: 1.625em;
+    margin: 0 0 0.625em;
+    padding: 0 0.625em 0.688em;
     position: relative;
     text-decoration: none;
     text-shadow: 0 1px 1px rgba(255,255,255,.35);
-    width: 125px; }
+    width: 7.813em; }
 
 /**
  * Pink
