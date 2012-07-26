@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>Monica Peters Camera Demo</title>
+        
+		<meta type="charset" content = "utf-8" />
+		<meta type="robots" content="index,follow" />
+		<meta type="description" content="Manage your personal media library" />
+		<meta type="keywords" content = "media library, add media, monica peters, vfw" />
+		
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True">
+            <meta name="MobileOptimized" content="320"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+            
+            <!-- Mobile IE needs ClearType for smoothing fonts -->
+            <meta http-equiv="cleartype" content="on">
+                
+                <!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+                <script src="modernizr.js"></script>
+                <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
+                
+                <!-- Monica's custom style sheet-->
+                <!-- call custom style sheets last when using jqmobile -->
+                <link rel="stylesheet" href="styles.css" />
+                
+                </head>
+	
+  	<body class="center" onload="onBodyLoad()">
+        <header>
+            <h1>Camera Demo</h1>
+            
+            <div id="icons" class="center">
+                <ul><li class="home"><a href="index.html" class="home">Home</a></li></ul>
+            </div><!--/icons-->
+            
+            <article id="navigation">
+                <div id="container">
+                    <p class="center">
+                    <a href="geolocation.html" class="s3d navy">
+                        Geolocation
+                    </a>
+                    <a href="accelerometer.html" class="s3d navy">
+                        Accelerometer
+                    </a>
+                    <a href="camera.html" class="s3d navy">
+                        Camera
+                    </a>
+                    </p>
+                    <p class="center">
+                    <a href="storage.html" class="s3d teal">
+                        Storage
+                    </a>
+                    <a href="contacts.html" class="s3d teal">
+                        Contacts                    
+                    </a>
+                    </p>
+                    <p class="center">
+                    <a href="compass.html" class="s3d hotpink">
+                        Compass
+                    </a>
+                    <a href="notification_alert.html" class="s3d hotpink">
+                        Alert
+                    </a>
+                    <a href="video.html" class="s3d hotpink">
+                        Video 
+                    </a>
+                    </p>
+                </div>
+            </article><!--/navigation-->
+        </header>
+        <hr />
+            <div data-role="content" class="center">
+                    <img height="200" width="200" id="myImage" align="center" alt="Camera Snapshot" />
+                    <br />
+                    <a class="s3d orange" onclick="captureImage();">Take a Picture</a>
+                    <div id="phoneGapReady" class="phoneGapReady"></div>         
+            </div><!--/content-->
+        </div><!--/page-->
+        
+        <footer>Monica Peters : AVF1206 : AVF PhoneGap iOS Demo : Camera</footer>
+        
+        <!--jquery and jquery mobile-->
+        <!--note that order of js is important below-->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+        <!--plugins-->
+        <script type="text/javascript" src="camera.js"></script>
+        
+        <!--custom js-->	
+        
+	</body>
+</html>

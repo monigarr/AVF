@@ -1,0 +1,126 @@
+<!-- 
+ Monica Peters
+ Full Sail University
+ AVF Advanced Visual Frameworks
+ Monica Peters
+ Week 2
+ Due Thursday July 12th 2012
+ 
+ HTML Lint Test
+ passed July 1st 2012
+ -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>Monica Peters Storage Demo</title>
+        
+		<meta type="charset" content="utf-8" />
+		<meta type="robots" content="index,follow" />
+		<meta type="description" content="Manage your personal media library" />
+		<meta type="keywords" content="media library, add media, monica peters, vfw" />
+		
+		
+		<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="MobileOptimized" content="320"/>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="cleartype" content="on" />
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+        <script src="modernizr.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
+        
+		<!-- Monica's custom style sheet-->
+		<!-- call custom style sheets last when using jqmobile -->
+        <link rel="stylesheet" href="styles.css" />
+		
+        
+	</head>
+	
+  	<body class="center" onload="onBodyLoad()">
+  		<div data-role="page" id="contacts">
+            <header>
+                <h1>Storage Demo</h1>
+                <div id="icons" class="center">
+                    <ul><li class="home"><a href="index.html" class="home">Home</a></li></ul>
+                </div><!--/icons-->
+                <article id="navigation">
+                    <div id="container">
+                        <p class="center">
+                        <a href="geolocation.html" class="s3d navy">
+                            Geolocation
+                        </a>
+                        <a href="accelerometer.html" class="s3d navy">
+                            Accelerometer
+                        </a>
+                        <a href="camera.html" class="s3d navy">
+                            Camera
+                        </a>
+                        </p>
+                        <p class="center">
+                        <a href="storage.html" class="s3d teal">
+                            Storage
+                        </a>
+                        <a href="contacts.html" class="s3d teal">
+                            Contacts                    
+                        </a>
+                        </p>
+                        <p class="center">
+                        <a href="compass.html" class="s3d hotpink">
+                            Compass
+                        </a>
+                        <a href="notification_alert.html" class="s3d hotpink">
+                            Alert
+                        </a>
+                        <a href="video.html" class="s3d hotpink">
+                            Video 
+                        </a>
+                        </p>
+                    </div>
+                </article><!--/navigation-->
+            </header>
+            <hr />
+            <div data-role="content">
+                    <div class="center">
+                        <blockquote class="center">
+                            Provides access to the device storage options.
+                        </blockquote>
+                        <h4 class="center">Based on W3C Web SQL Database Spec and W3C Web Storage API Spec</h4>                                                     
+                            <a class="s3d orange center" onclick="createDB();">Create DB</a>
+                            <a class="s3d green center" onclick="getSqlResultSet();">SQL Result Set</a>
+                        <div class="result-block center">
+                            SQL Result: <br/><span id="sql-result"></span><br/>
+                        </div><br/>                             
+                        <a class="s3d orange center" onclick="writeLocalStorage();">Write LocalStorage</a>
+                        <a class="s3d green center" onclick="readLocalStorage();">Read LocalStorage</a>
+                        <a class="s3d pink center" onclick="removeItemLocalStorage();">Remove Item</a>
+                        <div class="result-block center">
+                            Local Storage: <span id="local-storage-result"></span><br/>
+                        </div>             
+                    </div>
+            </div><!--/content-->
+        </div><!--/page-->
+        <div data-role="footer" id="footer"><small>Monica Peters : AVF1206 : Storage Demo.</small></div>
+
+        
+        <!--jquery and jquery mobile-->
+        <!--note that order of js is important below-->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        
+        
+        <!--plugins-->
+        <script type="text/javascript" src="test.js"></script>
+        <script type="text/javascript" src="storage.js"></script>
+        
+        <!--custom js-->	
+        
+        
+    </body>
+</html>
+
+
+

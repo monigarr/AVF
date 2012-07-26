@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<title>Monica Peters GeoLocation Demo</title>
+        <meta type="charset" content = "utf-8" />
+        <meta type="robots" content="index,follow" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
+        <meta type="description" content="Manage your personal media library" />
+        <meta type="keywords" content = "media library, add media, monica peters, avf week 2" />
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+
+                <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />-->
+                
+                <script type="text/javascript" charset="utf-8" src="cordova-1.8.1.js"></script>
+                
+                <!-- Monica's custom style sheet-->
+                <!-- call custom style sheets last when using jqmobile -->
+                <link rel="stylesheet" href="styles.css" />
+                
+                </head>
+	
+  	<body onload="onBodyLoad()">
+	  	           <header><h1><a href="index.html">Android Demo</a></h2></header>	
+                <h1>Geolocation</h1>
+                <div id="icons" class="center">
+                    <ul><li class="home"><a href="index.html" class="home">Home</a></li></ul>
+                </div><!--/icons-->
+            <hr />	
+	  	<div data-role="content">
+			<div role="main" id="secondary_content" >
+                <h3>Geolocation Demo</h3>
+                    <p id="geolocationDemo">HTML5 Geolocation to find your location.</p>
+                    <button onclick="getLocation()">Show My Location</button>
+                    <div id="maparea"></div>
+                    </div><!--/main /secondary_content-->
+			<div class="push"></div>
+			
+        </div><!--/content-->
+		<footer>Monica Peters : AVF0612 : AVF PhoneGap iOS Demo : Geolocation</footer>
+        </div><!--/page-->
+        
+        
+        <!--jquery and jquery mobile-->
+        <!--note that order of js is important below-->
+        <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+        <!--plugins-->
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=panoramio"></script>
+        <script type="text/javascript" src="geolocation.js"></script>
+        
+        <!--custom js-->	
+        <script type="text/javascript" src="main.js"></script>
+        
+	</body>
+</html>
