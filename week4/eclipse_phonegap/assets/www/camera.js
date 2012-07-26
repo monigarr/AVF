@@ -6,14 +6,14 @@ var imageSource;
 //set format of returned value
 var destinationType;
 
-function onBodyLoad()
+var onBodyLoad = function()
 {
     document.addEventListener("deviceready",onDeviceReady,false);
     console.log('deviceready');
 }
 
 /* PhoneGap is initialized */
-function onDeviceReady()
+var onDeviceReady = function()
 {
     phoneGapReady.innerHTML = "";
     imageSource=navigator.camera.imageSourceType;
@@ -22,7 +22,7 @@ function onDeviceReady()
 }
 
 // Call when Image successfully received
-function onPhotoDataSuccess(imageData) {
+var onPhotoDataSuccess = function(imageData) {
     
     // Get image handle
     var myImage = document.getElementById('myImage');
@@ -36,7 +36,7 @@ function onPhotoDataSuccess(imageData) {
 }
 
 // Called when image is received
-function onPhotoURISuccess(imageURI) {
+var onPhotoURISuccess = function(imageURI) {
     
     // Get image handle
     var myImage = document.getElementById('myImage');
@@ -49,7 +49,7 @@ function onPhotoURISuccess(imageURI) {
 }
 
 // Use a button to call this
-function captureImage() {
+var captureImage = function() {
     
     // Take picture using device camera and retrieve image as base64-encoded string
     try {
@@ -65,7 +65,7 @@ function captureImage() {
 }
 
 // Use a button to call this
-function captureImageEdit() {
+var captureImageEdit = function() {
     try {
         // Take picture using device camera, allow edit, and retrieve image as base64-encoded string
         navigator.camera.getPicture(onPhotoDataSuccess, onFail, { 
@@ -79,7 +79,7 @@ function captureImageEdit() {
 }
 
 // Use a button to call this
-function getPhoto(source) {
+var getPhoto = function(source) {
     
     try {
         // Retrieve image file location from specified source
@@ -94,7 +94,7 @@ function getPhoto(source) {
     }
 }
 
-function onFail(message) {
+var onFail = function(message) {
     
     alert('Failed: ' + message);
 }

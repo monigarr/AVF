@@ -5,12 +5,12 @@ function onBodyLoad()
     document.addEventListener("deviceready",onDeviceReady,false);
 }            
 /* initialize PhoneGap */
-function onDeviceReady()
+var onDeviceReady = function()
 {
     console.log('PhoneGap Initialized');
 }
 
-function getCurrentAcceleration() 
+var getCurrentAcceleration = function() 
 {
     navigator.accelerometer.getCurrentAcceleration(onAccelerationSuccess, onError);
     console.log('getCurrentAcceleration');
@@ -18,14 +18,14 @@ function getCurrentAcceleration()
 
 // Success: Get snapshot of  current acceleration
 // Replace this with an animated graphic for fun
-function onAccelerationSuccess(acceleration) {
+var onAccelerationSuccess = function(acceleration) {
     alert( 'Acceleration X: ' + acceleration.x + ', Acceleration Y: ' + acceleration.y 
           + ', Acceleration Z: ' + acceleration.z );
     console.log('Success. Grab Snapshot of Current Acceleration & Celebrate the Awesomeness.');
 }
 
 // Error: Fail to get acceleration
-function onError() {
+var onError = function() {
     alert ("onError");
     console.log('Failed to get Acceleration. Back to the Drawing Board Sucka!');
 }
@@ -75,7 +75,7 @@ if(window.DeviceMotionEvent!=undefined){window.ondevicemotion=function(e)
                 sphere.style.left=x+"px";
                 },25);
 }
-function boundingBoxCheck()
+var boundingBoxCheck = function()
 {
 	if(x<0)
     {

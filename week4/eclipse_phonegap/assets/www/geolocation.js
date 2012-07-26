@@ -20,18 +20,18 @@
 //http://www.sencha.com/forum/showthread.php?142287-phonegap-and-sencha-touch
 //https://developers.google.com/maps/documentation/javascript/examples/
 
-function onBodyLoad()
+var onBodyLoad = function()
 {		
     document.addEventListener("deviceready", onDeviceReady, false);
 }
 
-function onDeviceReady()
+var onDeviceReady = function()
 {
     phoneGapReady.innerHTML = ("")	
 }
 var x=document.getElementById("geolocationDemo");
 
-function getLocation()
+var getLocation = function()
 {
     
     if (navigator.geolocation)
@@ -41,7 +41,7 @@ function getLocation()
     else{x.innerHTML="your browser can't handle Geolocation & Google Maps Awesomeness.";}
 }
 
-function showPosition(position)
+var showPosition = function(position)
 {
     lat=position.coords.latitude;
     lon=position.coords.longitude;
@@ -61,7 +61,7 @@ function showPosition(position)
     var marker=new google.maps.Marker({position:latlon,map:map,title:"You are here."});
 }
 
-function showError(error)
+var showError = function(error)
 {
     switch(error.code) 
     {

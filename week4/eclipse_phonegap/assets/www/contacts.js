@@ -3,7 +3,7 @@
 
 // api-contacts
 
-function contacts_success(contacts) 
+var contacts_success = function(contacts) 
 {
     document.getElementById('contacts-output').innerHTML = 
     "<h3>You have " + contacts.length + " contacts.</h3>" +
@@ -20,11 +20,11 @@ function contacts_success(contacts)
     }
 };
 
-function contacts_fail(error) 
+var contacts_fail = function(error) 
 {
     document.getElementById('contacts-output').innerHTML = "<strong>Too Bad, So Sad! I can't get your Contacts.</strong>";
 }
-function get_contacts() 
+var get_contacts = function() 
 {
     var obj = new ContactFindOptions();
     obj.filter = "";

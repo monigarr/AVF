@@ -20,14 +20,14 @@
 //api-compass
 var compassWatch = null;
 
-function updateHeading(h) {
+var updateHeading = function(h) {
     document.getElementById('heading').innerHTML = h.magneticHeading;
 }
-function compassError(error) {
+var compassError = function(error) {
     alert('Compass Error: ' + error.code);
     document.getElementById('heading').innerHTML = "Error";
 }
-function toggleCompass() {
+var toggleCompass = function() {
     if (compassWatch !== null) {
         navigator.compass.clearWatch(compassWatch);
         compassWatch = null;
@@ -39,7 +39,7 @@ function toggleCompass() {
 													  updateHeading, compassError, options);
     }
 }
-function getCurrentHeading() {
+var getCurrentHeading = function() {
     if (compassWatch !== null) {
         navigator.compass.clearWatch(compassWatch);
         compassWatch = null;
